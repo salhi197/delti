@@ -53,7 +53,7 @@ class LoginController extends Controller
 
     public function showClientLoginForm()
     {
-        return view('auth.client', [
+        return view('auth.login', [
             'url' => Config::get('constants.guards.client')
         ]);
     }
