@@ -61,8 +61,8 @@
                                         <div class="flex-grow-1">
                                             <p class="text-truncate font-size-14 mb-2"></p>
                                             <h4 class="mb-2" style="color: #fff;">Historique</h4>
-                                            <p class="text-muted mb-0" style="color: #fff;">Consulter La liste de votre Historique<span
-                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;"><br></p>
+                                            <p class="text-muted mb-0" style="color: #fff;"><span
+                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;">Commencer Votre Compteur . </p>
                                         </div>
                                         <div class="avatar-sm">
                                             <a href="{{route('histo')}}">
