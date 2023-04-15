@@ -21,12 +21,22 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h3 class="mb-sm-0">Bienvenue <?php echo e(Auth::guard('client')->user()->nom ?? Auth::guard('client')->user()->name); ?></h3>
+                            <h3 class="mb-sm-0">Bienvenue <?php echo e(Auth::guard('client')->user()->nom ?? Auth::guard('client')->user()->name); ?></h3>
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-body align-items-center d-flex justify-content-center">
+                                    <div class="d-flex">
+                                    <?php echo QrCode::size(100)->generate(Request::url());; ?>
+
+                                    </div>
+                                </div><!-- end cardbody -->
+
+                        </div><!-- end col -->
+
                         <div class="col-md-6">
                             <div class="card" style="background-color: #e30613; color: #fff; box-shadow: 0px -2px 31px -6px rgba(227,6,19,0.82);
                                 -webkit-box-shadow: 0px -2px 31px -6px rgba(227,6,19,0.82);
@@ -37,9 +47,7 @@
                                             <p class="text-truncate font-size-14 mb-2"></p>
                                             <h4 class="mb-2" style="color: #fff;">Commencer Compteur</h4>
                                             <p class="text-muted mb-0" style="color: #fff;"><span
-                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;">Vous avez
-                                                    épuisé toutes les voies de recours, et vous estimez avoir été
-                                                    victime d'un vice de gestion d'un service public</p>
+                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;">Commencer Votre Compteur . </p>
                                         </div>
                                         <div class="avatar-sm">
                                             <a href="<?php echo e(route('count')); ?>">
@@ -62,10 +70,7 @@
                                             <p class="text-truncate font-size-14 mb-2"></p>
                                             <h4 class="mb-2" style="color: #fff;">Historique</h4>
                                             <p class="text-muted mb-0" style="color: #fff;"><span
-                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;">Vous vous
-                                                    êtes rendu dans une administration ou un organisme public et avez
-                                                    constaté<br> des manquements dans l'accueil,
-                                                    l'orientation, le traitement ou d'autres manquements,<br></p>
+                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;">Commencer Votre Compteur . </p>
                                         </div>
                                         <div class="avatar-sm">
                                             <a href="<?php echo e(route('histo')); ?>">

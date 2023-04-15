@@ -248,7 +248,7 @@ input:disabled{
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item" href="{{route('client.profile')}}"><i class="ri-user-line align-middle me-1"></i> Profile</a>
+                            <a class="dropdown-item" href="{{route('dashboard')}}"><i class="ri-user-line align-middle me-1"></i> Acceuil</a>
                             <a class="dropdown-item" href="{{route('client.profile')}}"><i class="fa fa-list"></i> Mot de passe</a>
                             <a class="dropdown-item text-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
                                     class="ri-shut-down-line align-middle me-1 text-danger"></i> Déconnexion</a>

@@ -23,12 +23,21 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h3 class="mb-sm-0">Bienvenue {{Auth::guard('client')->user()->nom ?? Auth::guard('client')->user()->name}}</h3>
+                            <h3 class="mb-sm-0">Bienvenue {{Auth::guard('client')->user()->nom ?? Auth::guard('client')->user()->name}}</h3>
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
+                        <div class="col-md-6">
+                            <div class="card-body align-items-center d-flex justify-content-center">
+                                    <div class="d-flex">
+                                    {!! QrCode::size(100)->generate(Request::url()); !!}
+                                    </div>
+                                </div><!-- end cardbody -->
+
+                        </div><!-- end col -->
+
                         <div class="col-md-6">
                             <div class="card" style="background-color: #e30613; color: #fff; box-shadow: 0px -2px 31px -6px rgba(227,6,19,0.82);
                                 -webkit-box-shadow: 0px -2px 31px -6px rgba(227,6,19,0.82);
