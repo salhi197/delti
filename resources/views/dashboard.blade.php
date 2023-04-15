@@ -70,7 +70,7 @@
                                                     l'orientation, le traitement ou d'autres manquements,<br></p>
                                         </div>
                                         <div class="avatar-sm">
-                                            <a href="{{route('doleance.index.client')}}">
+                                            <a href="{{route('histo')}}">
                                             <span class="avatar-title bg-light text-success rounded-3">
                                                 <i class="mdi mdi-pencil-plus font-size-24"  style="color: #252b3b"></i>
                                             </span>

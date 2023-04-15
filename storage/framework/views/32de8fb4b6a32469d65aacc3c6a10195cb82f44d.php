@@ -68,7 +68,7 @@
                                                     l'orientation, le traitement ou d'autres manquements,<br></p>
                                         </div>
                                         <div class="avatar-sm">
-                                            <a href="<?php echo e(route('doleance.index.client')); ?>">
+                                            <a href="<?php echo e(route('histo')); ?>">
                                             <span class="avatar-title bg-light text-success rounded-3">
                                                 <i class="mdi mdi-pencil-plus font-size-24"  style="color: #252b3b"></i>
                                             </span>
