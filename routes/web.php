@@ -236,6 +236,7 @@ Route::get('/lang/{lang}', 'LangController@setLang')->name('lang');
 Route::view('/', 'auth.login');
 // Route::view('/dashboard', 'dashboard')->name('dashboard');
 Route::get('/dashboard', 'ClientController@dashboard')->name('dashboard');
+Route::get('/histo', 'ClientController@histo')->name('histo');
 Route::get('/count', 'ClientController@count')->name('count');
 
 // Route::view('/count', 'count')->name('count');

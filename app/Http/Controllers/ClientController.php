@@ -18,6 +18,16 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
+    public function histo()
+    {
+        if(Auth::guard('client')->check()){
+            return view('hsito');//,compact('client'));
+        }else{
+            return Redirect::route('login');
+        }
+
+    }
+
     public function dashboard()
     {
         if(Auth::guard('client')->check()){
@@ -224,7 +234,12 @@ class ClientController extends Controller
     public function compteur($id_client)
     {
         $client = Client::find($id_client);
-        $count = $client->count;
+        if(is_null($client)){
+            return Redirect::route('login');
+        }else{
+            $count = $client->count;            
+        }
+
         return view('compteur',compact('client','count'));
 
     }
