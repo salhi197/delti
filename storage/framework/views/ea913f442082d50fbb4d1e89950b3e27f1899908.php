@@ -16,7 +16,6 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 id="compteur"><?php echo e($count ?? 0); ?></h1>
-
                                 <div class="qty mt-5">
                                     <!-- <button class="btn btn-info" id="compteur" name="qty" value="<?php echo e($count ?? 0); ?>"><?php echo e($count ?? 0); ?></button> -->
                                 </div>                            

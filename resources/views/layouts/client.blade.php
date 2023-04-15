@@ -414,7 +414,7 @@ input:disabled{
                     console.log("err.message")
                 });
 
-				$('.count').val(parseInt($('.count').val()) + 1 );
+				$('.count').html(parseInt($('.count').html()) + 1 );
                 toastr.success('Done !')
 
     		});
@@ -433,10 +433,10 @@ input:disabled{
                 console.log("err.message")
                 });
 
-    			$('.count').val(parseInt($('.count').val()) - 1 );
+    			$('.count').html(parseInt($('.count').html()) - 1 );
                 toastr.success('Done !')
 
-    				if ($('.count').val() == 0) {
+    				if ($('.count').html() == 0) {
 						$('.count').val(1);
 					}
     	    	});

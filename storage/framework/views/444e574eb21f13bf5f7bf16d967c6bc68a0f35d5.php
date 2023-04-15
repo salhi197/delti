@@ -30,7 +30,7 @@
                         <div class="col-md-12">
                                 <div class="qty mt-5">
                                     <span class="minus bg-dark">-</span>
-                                    <input type="number" class="count" name="qty" value="<?php echo e(Auth::guard('client')->user()->count); ?>">
+                                    <span type="number" class="count" name="qty" ><?php echo e(Auth::guard('client')->user()->count); ?></span>
                                     <span class="plus bg-dark">+</span>
                                 </div>                            
                         </div><!-- end col -->
