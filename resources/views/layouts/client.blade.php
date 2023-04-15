@@ -42,11 +42,11 @@
     color: #000;
     display: inline-block;
     vertical-align: top;
-    font-size: 25px;
+    font-size: 60px;
     font-weight: 700;
-    line-height: 30px;
-    padding: 0 2px
-    ;min-width: 35px;
+    line-height: 40px;
+    padding: 0 5px;
+    min-width: 35px;
     text-align: center;
 }
 .qty .plus {

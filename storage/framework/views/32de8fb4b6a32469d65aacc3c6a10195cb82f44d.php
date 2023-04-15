@@ -61,7 +61,7 @@
                                             <p class="text-truncate font-size-14 mb-2"></p>
                                             <h4 class="mb-2" style="color: #fff;">Historique</h4>
                                             <p class="text-muted mb-0" style="color: #fff;"><span
-                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;">Commencer Votre Compteur . </p>
+                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;">Consulter Votre Historique . </p>
                                         </div>
                                         <div class="avatar-sm">
                                             <a href="<?php echo e(route('histo')); ?>">
