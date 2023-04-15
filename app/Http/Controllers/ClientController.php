@@ -194,6 +194,15 @@ class ClientController extends Controller
         return response()->json(['reponse' =>1]);    
     }
 
+    public function getCompteur($id_client)
+    {
+        $client = Client::find($id_client);
+        $count = $client->count;
+        return response()->json(['reponse' => $count]);
+        // return view('compteur',compact('client','count'));
+
+    }
+
     public function compteur($id_client)
     {
         $client = Client::find($id_client);

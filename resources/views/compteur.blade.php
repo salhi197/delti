@@ -17,9 +17,39 @@
 
                     <div class="row">
                         <div class="col-md-12">
+                            <h1 id="compteur">{{$count ?? 0}}</h1>
+
                                 <div class="qty mt-5">
-                                    <input type="number" class="count" name="qty" value="{{$count ?? 0}}">
+                                    <!-- <button class="btn btn-info" id="compteur" name="qty" value="{{$count ?? 0}}">{{$count ?? 0}}</button> -->
                                 </div>                            
                         </div><!-- end col -->
 
+@endsection
+@section('scripts')
+<script>
+          setInterval(function(){         
+            
+            let client = {!! $client->id !!};
+            let url ='/clients/get/compteur/'+client; 
+                    $.ajax({
+                      type: 'get',
+                      dataType: 'JSON', 
+                      url: url,
+                      success: function(success){
+                        console.log(success.reponse==$('#compteur').html())
+                        if(success.reponse!=$('#compteur').html()){
+                            toastr.success('Ticket Incrémenté')
+                        }
+                        $('#compteur').html(success.reponse)
+
+                      },
+                      error:function(err){
+                        console.log(err)
+                      }
+                    });
+
+
+        }, 1500);
+
+</script>
 @endsection

@@ -54,9 +54,9 @@
     display: inline-block;
     vertical-align: top;
     color: white;
-    width: 30px;
-    height: 30px;
-    font: 30px/1 Arial,sans-serif;
+    width: 50px;
+    height: 50px;
+    font: 50px/1 Arial,sans-serif;
     text-align: center;
     border-radius: 50%;
     }
@@ -65,9 +65,9 @@
     display: inline-block;
     vertical-align: top;
     color: white;
-    width: 30px;
-    height: 30px;
-    font: 30px/1 Arial,sans-serif;
+    width: 50px;
+    height: 50px;
+    font: 50px/1 Arial,sans-serif;
     text-align: center;
     border-radius: 50%;
     background-clip: padding-box;
@@ -89,7 +89,7 @@ span{
 }
 input{  
     border: 0;
-    width: 2%;
+    width: 10%;
 }
 nput::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -152,19 +152,14 @@ input:disabled{
 
                     <!-- App Search-->
 
-                    <!-- <div class="dropdown dropdown-mega d-none d-lg-block ms-2">
-                        <img src="<?php echo e(asset('client/assets/images/wassit.png')); ?>" alt="logo-light" height="40" style="margin: 20px;">
-                    </div> -->
+                    <div class="dropdown dropdown-mega d-none d-lg-block ms-2">
+                        <a href="/dashboard">Acceuil</a>
+                    </div>
                 </div>
 
                 <div class="d-flex">
 
                     <div class="dropdown d-inline-block d-lg-none ms-2">
-                        <button type="button" class="btn header-item noti-icon waves-effect"
-                            id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <i class="ri-search-line"></i>
-                        </button>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
                             aria-labelledby="page-header-search-dropdown">
 
@@ -342,7 +337,6 @@ input:disabled{
 
             <!-- Settings -->
             <hr class="mt-0" />
-            <h6 class="text-center mb-0">Choose Layouts</h6>
 
             
 
@@ -361,7 +355,6 @@ input:disabled{
     <script src="<?php echo e(asset('client/assets/libs/node-waves/waves.min.js')); ?>"></script>
 
     <!-- apexcharts -->
-    <script src="<?php echo e(asset('client/assets/libs/apexcharts/apexcharts.min.js')); ?>"></script>
 
     <!-- jquery.vectormap map -->
     <script src="<?php echo e(asset('client/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js')); ?>"></script>
@@ -393,8 +386,7 @@ input:disabled{
         <?php endif; ?>
             
 		$(document).ready(function(){
-            let client = <?php echo Auth::guard('client')->user()->id; ?>;
-
+            let client = <?php echo Auth::guard('client')->user()->id ?? ''; ?>;
 		    $('.count').prop('disabled', true);
    			$(document).on('click','.plus',function(){
             fetch('http://localhost:8000/clients/plus/'+client, {
@@ -405,10 +397,10 @@ input:disabled{
                 },
             }).then(res => res.json())
                 .then(res => {
-                console.log(res);
+                    console.log(res);
                 })
                 .catch(err=>function (err) {
-                console.log("err.message")
+                    console.log("err.message")
                 });
 
 				$('.count').val(parseInt($('.count').val()) + 1 );
@@ -438,6 +430,7 @@ input:disabled{
 					}
     	    	});
  		});
+
     </script>
 
     <?php echo $__env->yieldContent('scripts'); ?>

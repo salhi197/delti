@@ -46,7 +46,7 @@
                                         <div class="avatar-sm">
                                             <a href="{{route('count')}}">
                                             <span class="avatar-title bg-light text-primary rounded-3">
-                                                <i class="mdi mdi-pencil-plus font-size-24" ></i>
+                                                <i class="mdi mdi-plus font-size-24" ></i>
                                             </span>
                                         </a>
                                         </div>
