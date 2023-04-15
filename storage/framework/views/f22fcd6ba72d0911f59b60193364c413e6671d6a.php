@@ -4,7 +4,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Wassit</title>
+    <title>Dalti</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
@@ -396,7 +396,7 @@ input:disabled{
             let client = <?php echo Auth::guard('client')->user()->id ?? ''; ?>;
 		    $('.count').prop('disabled', true);
    			$(document).on('click','.plus',function(){
-            fetch('http://localhost:8000/clients/plus/'+client, {
+            fetch('/clients/plus/'+client, {
                 method: 'get', 
                 headers: {
                 'Accept': 'application/json, text/plain, */*',
@@ -415,7 +415,7 @@ input:disabled{
 
     		});
         	$(document).on('click','.minus',function(){
-                fetch('http://localhost:8000/clients/minus/'+client, {
+                fetch('/clients/minus/'+client, {
                 method: 'get', 
                 headers: {
                 'Accept': 'application/json, text/plain, */*',
