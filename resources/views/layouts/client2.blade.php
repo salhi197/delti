@@ -9,29 +9,29 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="<?php echo e(asset('client/assets/images/wassit.png')); ?>">
+    <link rel="shortcut icon" href="{{asset('client/assets/images/wassit.png')}}">
 
     <!-- jquery.vectormap css -->
-    <link href="<?php echo e(asset('client/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css')); ?>" rel="stylesheet"
+    <link href="{{asset('client/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet"
         type="text/css" />
-    <link href="<?php echo e(asset('css/toastr.css')); ?>" rel="stylesheet"/>
+    <link href="{{asset('css/toastr.css')}}" rel="stylesheet"/>
 
     <!-- DataTables -->
-    <link href="<?php echo e(asset('client/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="{{asset('client/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
 
     <!-- Responsive datatable examples -->
-    <link href="<?php echo e(asset('client/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')); ?>" rel="stylesheet"
+    <link href="{{asset('client/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')}}" rel="stylesheet"
         type="text/css" />
 
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 
 
     <!-- Bootstrap Css -->
-    <link href="<?php echo e(asset('client/assets/css/bootstrap.min.css')); ?>" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <link href="{{asset('client/assets/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
-    <link href="<?php echo e(asset('client/assets/css/icons.min.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="{{asset('client/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- App Css-->
-    <link href="<?php echo e(asset('client/assets/css/app.min.css')); ?>" id="app-style" rel="stylesheet" type="text/css" />
+    <link href="{{asset('client/assets/css/app.min.css')}}" id="app-style" rel="stylesheet" type="text/css" />
     <style>
         .toast-error { background-color: rgba(255,111,105,0.7) !important; }        
         .select2-results__group{
@@ -139,20 +139,20 @@ input:disabled{
                     <div class="navbar-brand-box">
                         <a href="index.html" class="logo logo-dark">
                             <span class="logo-sm">
-                                <img src="<?php echo e(asset('client/assets/images/ra.png')); ?>" alt="logo-sm" height="22">
+                                <img src="{{asset('client/assets/images/ra.png')}}" alt="logo-sm" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="<?php echo e(asset('client/assets/images/ra.png')); ?>" alt="logo-dark" height="20">
+                                <img src="{{asset('client/assets/images/ra.png')}}" alt="logo-dark" height="20">
                             </span>
                         </a>
 
                         <a href="index.html" class="logo logo-light">
                             <!-- <span class="logo-sm">
-                                <img src="<?php echo e(asset('client/assets/images/ra.png')); ?>" alt="logo-sm-light" height="22">
+                                <img src="{{asset('client/assets/images/ra.png')}}" alt="logo-sm-light" height="22">
                             </span>
                             <span class="logo-lg">
                                 <div class="head"></div>
-                                <img src="<?php echo e(asset('client/assets/images/ra.png')); ?>" alt="logo-light" height="50">
+                                <img src="{{asset('client/assets/images/ra.png')}}" alt="logo-light" height="50">
                             </span> -->
                         </a>
                     </div>
@@ -242,28 +242,20 @@ input:disabled{
 
 
                     <div class="dropdown d-inline-block user-dropdown">
-                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class=" fas fa-house-user"></i>
-                        </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item" href="<?php echo e(route('client.profile')); ?>"><i class="ri-user-line align-middle me-1"></i> Profile</a>
-                            <a class="dropdown-item" href="<?php echo e(route('client.profile')); ?>"><i class="fa fa-list"></i> Mot de passe</a>
-                            <a class="dropdown-item text-danger" href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                            <a class="dropdown-item" href="{{route('client.profile')}}"><i class="ri-user-line align-middle me-1"></i> Profile</a>
+                            <a class="dropdown-item" href="{{route('client.profile')}}"><i class="fa fa-list"></i> Mot de passe</a>
+                            <a class="dropdown-item text-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
                                     class="ri-shut-down-line align-middle me-1 text-danger"></i> Déconnexion</a>
-                                <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
-                                    <?php echo e(csrf_field()); ?>
-
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
                                 </form>
 
                         </div>
                     </div>
 
                     <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                            <i class="ri-settings-2-line"></i>
-                        </button>
                     </div>
 
                 </div>
@@ -297,7 +289,7 @@ input:disabled{
 
                     <!-- start page title -->
                     <!-- end page title -->
-                <?php echo $__env->yieldContent('content'); ?>
+                @yield('content')
                 </div><!-- end row -->
 
 
@@ -355,45 +347,45 @@ input:disabled{
     <div class="rightbar-overlay"></div>
 
     <!-- JAVASCRIPT -->
-    <script src="<?php echo e(asset('client/assets/libs/jquery/jquery.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('client/assets/libs/bootstrap/js/bootstrap.bundle.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('client/assets/libs/metismenu/metisMenu.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('client/assets/libs/simplebar/simplebar.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('client/assets/libs/node-waves/waves.min.js')); ?>"></script>
+    <script src="{{asset('client/assets/libs/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('client/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('client/assets/libs/metismenu/metisMenu.min.js')}}"></script>
+    <script src="{{asset('client/assets/libs/simplebar/simplebar.min.js')}}"></script>
+    <script src="{{asset('client/assets/libs/node-waves/waves.min.js')}}"></script>
 
     <!-- apexcharts -->
 
     <!-- jquery.vectormap map -->
-    <script src="<?php echo e(asset('client/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('client/assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js')); ?>"></script>
+    <script src="{{asset('client/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
+    <script src="{{asset('client/assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js')}}"></script>
 
     <!-- Required datatable js -->
-    <script src="<?php echo e(asset('client/assets/libs/datatables.net/js/jquery.dataTables.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('client/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js')); ?>"></script>
+    <script src="{{asset('client/assets/libs/datatables.net/js/jquery.dataTables.min.js')}}"></script>
+    <script src="{{asset('client/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
 
     <!-- Responsive examples -->
-    <script src="<?php echo e(asset('client/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('client/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')); ?>"></script>
+    <script src="{{asset('client/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js')}}"></script>
+    <script src="{{asset('client/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')}}"></script>
 
-    <script src="<?php echo e(asset('client/assets/js/pages/dashboard.init.js')); ?>"></script>
+    <script src="{{asset('client/assets/js/pages/dashboard.init.js')}}"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
-    <script src="<?php echo e(asset('client/assets/js/app.js')); ?>"></script>
-    <script src="<?php echo e(asset('js/toastr.min.js')); ?>"></script>	
+    <script src="{{asset('client/assets/js/app.js')}}"></script>
+    <script src="{{asset('js/toastr.min.js')}}"></script>	
     <script>
-        <?php if(session('error')): ?>
+        @if(session('error'))
             $(function(){
-                toastr.error('<?php echo e(Session::get("error")); ?>')
+                toastr.error('{{Session::get("error")}}')
             })
 
-        <?php endif; ?>
-        <?php if(session('success')): ?>
-            toastr.success('<?php echo e(Session::get("success")); ?>')
-        <?php endif; ?>
+        @endif
+        @if(session('success'))
+            toastr.success('{{Session::get("success")}}')
+        @endif
             
 		$(document).ready(function(){
-            let client = <?php echo Auth::guard('client')->user()->id ?? ''; ?>;
+            let client = {!! Auth::guard('client')->user()->id ?? '' !!};
 		    $('.count').prop('disabled', true);
    			$(document).on('click','.plus',function(){
             fetch('http://localhost:8000/clients/plus/'+client, {
@@ -440,7 +432,7 @@ input:disabled{
 
     </script>
 
-    <?php echo $__env->yieldContent('scripts'); ?>
+    @yield('scripts')
     <script>
         $(document).ready(function() {
             // $('select2').select2();

@@ -242,10 +242,6 @@ input:disabled{
 
 
                     <div class="dropdown d-inline-block user-dropdown">
-                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class=" fas fa-house-user"></i>
-                        </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
                             <a class="dropdown-item" href="<?php echo e(route('client.profile')); ?>"><i class="ri-user-line align-middle me-1"></i> Profile</a>
@@ -261,9 +257,6 @@ input:disabled{
                     </div>
 
                     <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
-                            <i class="ri-settings-2-line"></i>
-                        </button>
                     </div>
 
                 </div>

@@ -157,10 +157,6 @@ input:disabled{
                         </a>
                     </div>
 
-                    <button type="button" class="btn btn-sm px-3 font-size-24 d-lg-none header-item"
-                        data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
-                        <i class="ri-menu-2-line align-middle"></i>
-                    </button>
 
                     <!-- App Search-->
 
@@ -180,8 +176,7 @@ input:disabled{
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="Search ...">
                                         <div class="input-group-append">
-                                            <button class="btn btn-primary" type="submit"><i
-                                                    class="ri-search-line"></i></button>
+                                            <a href="/dashboard">Acceuil</a>
                                         </div>
                                     </div>
                                 </div>
