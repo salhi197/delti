@@ -18,6 +18,24 @@ use Illuminate\Http\Request;
 
 class ClientController extends Controller
 {
+    public function dashboard()
+    {
+        if(Auth::guard('client')->check()){
+            return view('dashboard');//,compact('client'));
+        }else{
+            return Redirect::route('login');
+        }
+    }
+
+    public function count()
+    {
+        if(Auth::guard('client')->check()){
+            return view('count');//,compact('client'));
+        }else{
+            return Redirect::route('login');
+        }
+    }
+
 
     public function profile()
     {

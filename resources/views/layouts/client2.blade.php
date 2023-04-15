@@ -256,7 +256,7 @@ input:disabled{
                     </div>
 
                     <div class="dropdown d-inline-block">
-                    </div>
+                        </div>
 
                 </div>
             </div>

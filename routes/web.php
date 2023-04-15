@@ -234,8 +234,11 @@ Route::get('/lang/{lang}', 'LangController@setLang')->name('lang');
 
 
 Route::view('/', 'auth.login');
-Route::view('/dashboard', 'dashboard')->name('dashboard');
-Route::view('/count', 'count')->name('count');
+// Route::view('/dashboard', 'dashboard')->name('dashboard');
+Route::get('/dashboard', 'ClientController@dashboard')->name('dashboard');
+Route::get('/count', 'ClientController@count')->name('count');
+
+// Route::view('/count', 'count')->name('count');
 Route::get('/inscription', 'HomeController@inscription')->name('inscription');
 
 
