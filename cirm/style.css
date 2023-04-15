@@ -1,0 +1,144 @@
+                        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+                        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap');
+                        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap');
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            text-decoration: none;
+                            list-style: none;
+                            box-sizing: border-box;
+                        }
+                        
+                        header {
+                            background-color: rgb(55, 65, 77);
+                            height: 145px;
+                            padding-top: 10px;
+                            align-items: center;
+                            justify-content: space-between;
+                            width: 100%;
+                        }
+                        
+                        .logo {
+                            width: 500px;
+                            height: 500px;
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                        
+                        .logo img {
+                            width: 100%;
+                            align-items: center;
+                        }
+                        
+                        .titre1 h2 {
+                            font-family: cairo;
+                            font-size: 13px;
+                            font-weight: 400;
+                            color: white;
+                            text-align: center;
+                            padding-top: 80px;
+                            letter-spacing: 1.5px;
+                        }
+                        
+                        .titre2 h2 {
+                            font-family: cairo;
+                            color: white;
+                            text-align: center;
+                            font-weight: 400;
+                            font-size: 13px;
+                            letter-spacing: 1px;
+                        }
+                        
+                        nav {
+                            height: 60px;
+                            width: 100%;
+                            box-shadow: 3px 3px rgb(232, 235, 235);
+                        }
+                        
+                        .logo2 img {
+                            width: 60px;
+                            padding-top: 5px;
+                            line-height: 80px;
+                            float: right;
+                            margin-right: 250px;
+                        }
+                        
+                        nav ul {
+                            float: left;
+                            margin-left: 150px;
+                        }
+                        
+                        nav li {
+                            display: inline-block;
+                            margin: 0 15px;
+                            line-height: 60px;
+                        }
+                        
+                        nav a {
+                            color: #37414d;
+                            font-size: 15px;
+                            font-family: cairo;
+                            border-bottom: 1px solid transparent;
+                        }
+                        
+                        a.active,
+                        a:hover {
+                            border-bottom: 2px solid #de2424;
+                            transition: .5s;
+                        }
+                        
+                        nav #icon {
+                            color: #37414d;
+                            font-size: 30px;
+                            line-height: 50px;
+                            float: left;
+                            margin-left: 40px;
+                            cursor: pointer;
+                        }
+                        /*banner*/
+                        
+                        .banner {
+                            position: relative;
+                            width: 100%;
+                            min-height: 40vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: url(img/bg.jpg);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        
+                        .banner .content {
+                            max-width: 900px;
+                            text-align: center;
+                        }
+                        
+                        .banner .content h2 {
+                            font-family: cairo;
+                            font-size: 40px;
+                            font-weight: 600;
+                            color: #37414d;
+                        }
+                        
+                        .row {
+                            position: relative;
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 25px 0px 0px 180px;
+                        }
+                        
+                        .row .col70 {
+                            position: relative;
+                            width: 70%;
+                        }
+                        
+                        .row p {
+                            text-align: center;
+                            /*padding: 50px 50px 50px 0;*/
+                            font-family: cairo;
+                            font-weight: 500;
+                            font-size: 19px;
+                        }
