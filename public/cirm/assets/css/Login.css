@@ -1,0 +1,114 @@
+ .u-section-1 {
+  background-image: url("../images/MOTIF.png");
+  background-position: 50% 50%;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 534px;
+}
+
+.u-section-1 .u-image-1 {
+  width: 570px;
+  height: 108px;
+  margin: 15px auto 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-weight: 700;
+  font-family: Al-Jazeera-Arabic-Regular;
+  width: 298px;
+  margin: 15px auto 0;
+}
+
+.u-section-1 .u-form-1 {
+  height: 228px;
+  width: 570px;
+  margin: 15px auto 0;
+}
+
+.u-section-1 .u-input-1 {
+  text-transform: uppercase;
+  font-family: JannaLT-Regular;
+  font-size: 1.25rem;
+}
+
+.u-section-1 .u-input-2 {
+  text-transform: uppercase;
+  font-family: JannaLT-Regular;
+  font-size: 1.25rem;
+}
+
+.u-section-1 .u-btn-1 {
+  letter-spacing: 1px;
+  border-style: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: Al-Jazeera-Arabic-Regular;
+  font-size: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 100%;
+  padding: 9px 0 11px;
+}
+
+.u-section-1 .u-btn-2 {
+  background-image: none;
+  border-style: solid;
+  font-family: Al-Jazeera-Arabic-Regular;
+  font-size: 1.5rem;
+  margin: 15px auto 44px;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 440px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 337px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 247px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 540px;
+    height: 102px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 209px;
+  }
+
+  .u-section-1 .u-image-1 {
+    width: 340px;
+    height: 64px;
+  }
+
+  .u-section-1 .u-form-1 {
+    width: 340px;
+  }
+}@font-face {
+  font-family: 'Al-Jazeera-Arabic-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Al-Jazeera-Arabic-Regular.ttf);
+}@font-face {
+  font-family: 'JannaLT-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/JannaLT-Regular.ttf);
+}

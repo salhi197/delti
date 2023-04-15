@@ -1,0 +1,623 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 83px;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: Al-Jazeera-Arabic-Regular;
+  margin: 30px 63px 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-text-1 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 122px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 15px;
+    margin-bottom: 1px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 1228px;
+}
+
+.u-section-2 .u-tabs-1 {
+  min-height: 998px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: auto;
+}
+
+.u-section-2 .u-tab-link-1 {
+  font-size: 1.25rem;
+  background-image: none;
+  font-weight: 700;
+  font-family: JannaLT-Regular;
+  padding: 10px 25px;
+}
+
+.u-section-2 .u-tab-link-2 {
+  font-size: 1.25rem;
+  background-image: none;
+  font-weight: 700;
+  font-family: JannaLT-Regular;
+  padding: 10px 25px;
+}
+
+.u-section-2 .u-tab-link-3 {
+  font-size: 1.25rem;
+  background-image: none;
+  font-weight: 700;
+  font-family: JannaLT-Regular;
+  padding: 10px 25px;
+}
+
+.u-section-2 .u-tab-pane-1 {
+  background-image: none;
+}
+
+.u-section-2 .u-container-layout-1 {
+  padding: 0 25px;
+}
+
+.u-section-2 .u-group-1 {
+  width: 1026px;
+  min-height: 1018px;
+  height: auto;
+  box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.4);
+  margin: 46px 20px -150px auto;
+}
+
+.u-section-2 .u-container-layout-2 {
+  padding: 30px;
+}
+
+.u-section-2 .u-form-1 {
+  height: 453px;
+  margin: 19px 70px 0 0;
+}
+
+.u-section-2 .u-form-group-1 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-1 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-1 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-2 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-2 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-2 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-3 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-3 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-3 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-4 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-4 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-4 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-label-5 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-5 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-label-6 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-6 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-7 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-7 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-7 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-8 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-8 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-8 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-9 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-9 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-9 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-10 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-10 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-10 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-11 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-11 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-11 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-form-group-12 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-12 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-12 {
+  font-family: JannaLT-Regular;
+}
+
+.u-section-2 .u-btn-1 {
+  background-image: none;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-family: JannaLT-Regular;
+  padding: 16px 56px 17px 55px;
+}
+
+.u-section-2 .u-tab-pane-2 {
+  background-image: none;
+}
+
+.u-section-2 .u-container-layout-3 {
+  padding: 30px 25px;
+}
+
+.u-section-2 .u-group-2 {
+  width: 1046px;
+  min-height: 909px;
+  height: auto;
+  margin: 0 auto 0 0;
+}
+
+.u-section-2 .u-container-layout-4 {
+  padding: 30px;
+}
+
+.u-section-2 .u-form-2 {
+  height: 453px;
+  margin: 19px 70px 0 0;
+}
+
+.u-section-2 .u-form-group-14 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-13 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-15 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-14 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-16 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-15 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-input-15 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-label-16 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-label-17 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-19 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-18 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-20 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-19 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-21 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-20 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-22 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-21 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-23 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-22 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-24 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-23 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-btn-2 {
+  background-image: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding: 16px 56px 17px 55px;
+}
+
+.u-section-2 .u-tab-pane-3 {
+  background-image: none;
+}
+
+.u-section-2 .u-container-layout-5 {
+  padding: 0;
+}
+
+.u-section-2 .u-form-3 {
+  height: 830px;
+  margin: 30px 168px 0 56px;
+}
+
+.u-section-2 .u-form-group-26 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-24 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-27 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-25 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-28 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-26 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-label-27 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-label-28 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-31 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-29 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-32 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-30 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-33 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-31 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-34 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-32 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-35 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-33 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-form-group-36 {
+  margin-left: 0;
+}
+
+.u-section-2 .u-label-34 {
+  font-family: JannaLT-Regular;
+  font-size: 1.125rem;
+}
+
+.u-section-2 .u-btn-3 {
+  background-image: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  padding: 16px 56px 17px 55px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-group-1 {
+    width: 940px;
+    margin-right: 0;
+    height: auto;
+  }
+
+  .u-section-2 .u-form-1 {
+    width: 670px;
+    margin-right: 0;
+  }
+
+  .u-section-2 .u-group-2 {
+    width: 940px;
+    height: auto;
+  }
+
+  .u-section-2 .u-form-2 {
+    width: 670px;
+    margin-right: 0;
+  }
+
+  .u-section-2 .u-form-3 {
+    margin-right: 24px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-group-1 {
+    width: 720px;
+  }
+
+  .u-section-2 .u-form-1 {
+    width: 660px;
+    margin-top: 142px;
+  }
+
+  .u-section-2 .u-group-2 {
+    width: 720px;
+  }
+
+  .u-section-2 .u-form-2 {
+    width: 660px;
+    margin-top: 142px;
+  }
+
+  .u-section-2 .u-form-3 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-container-layout-1 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-2 .u-group-1 {
+    width: 540px;
+  }
+
+  .u-section-2 .u-container-layout-2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-2 .u-form-1 {
+    width: 520px;
+    margin-top: 199px;
+  }
+
+  .u-section-2 .u-container-layout-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-2 .u-group-2 {
+    width: 540px;
+  }
+
+  .u-section-2 .u-container-layout-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .u-section-2 .u-form-2 {
+    width: 520px;
+    margin-top: 199px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 2570px;
+  }
+
+  .u-section-2 .u-tabs-1 {
+    min-height: 874px;
+    margin-top: 1px;
+  }
+
+  .u-section-2 .u-group-1 {
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-2 .u-form-1 {
+    width: 320px;
+    margin-top: 23px;
+  }
+
+  .u-section-2 .u-group-2 {
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-2 .u-form-2 {
+    width: 320px;
+    margin-top: 23px;
+  }
+}@font-face {
+  font-family: 'Al-Jazeera-Arabic-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/Al-Jazeera-Arabic-Regular.ttf);
+}@font-face {
+  font-family: 'JannaLT-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/JannaLT-Regular.ttf);
+}
