@@ -200,7 +200,7 @@ Route::group(['prefix' => 'setting','middleware' =>'lang', 'as' => 'setting'], f
 
 
 Route::get('/clients', 'ClientController@index')->name('client.index');
-Route::get('/clients/compteur/{id_client}', 'ClientController@compteur')->name('client.compteur');
+Route::get('/compteur/{id_client}', 'ClientController@compteur')->name('client.compteur');
 Route::get('/clients/get/compteur/{id_client}', 'ClientController@getCompteur')->name('getCompteur');
 
 
