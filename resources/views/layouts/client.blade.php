@@ -410,7 +410,7 @@ input:disabled{
                 });
 
 				$('.count').html(parseInt($('.count').html()) + 1 );
-                toastr.success('Done !')
+                toastr.success('Fait !')
 
     		});
         	$(document).on('click','.minus',function(){
@@ -429,7 +429,7 @@ input:disabled{
                 });
 
     			$('.count').html(parseInt($('.count').html()) - 1 );
-                toastr.success('Done !')
+                toastr.success('Fait !')
 
     				if ($('.count').html() == 0) {
 						$('.count').val(1);
