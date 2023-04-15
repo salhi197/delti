@@ -18,7 +18,6 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h1 id="compteur">{{$count ?? 0}}</h1>
-
                                 <div class="qty mt-5">
                                     <!-- <button class="btn btn-info" id="compteur" name="qty" value="{{$count ?? 0}}">{{$count ?? 0}}</button> -->
                                 </div>                            

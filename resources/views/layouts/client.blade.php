@@ -60,6 +60,18 @@
     text-align: center;
     border-radius: 50%;
     }
+    .compteur{
+        cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    color: white;
+    width: 100px;
+    height: 100px;
+    font: 50px/1 Arial,sans-serif;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+}
 .qty .minus {
     cursor: pointer;
     display: inline-block;
