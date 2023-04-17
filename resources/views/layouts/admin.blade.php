@@ -96,18 +96,6 @@
                             <i class="ri-search-line"></i>
                         </button>
                         <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
-
-                            <form class="p-3">
-                                <div class="mb-3 m-0">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search ...">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-primary" type="submit"><i
-                                                    class="ri-search-line"></i></button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
                         </div>
                     </div>
 
@@ -244,10 +232,6 @@
 
 
                     <div class="dropdown d-inline-block user-dropdown">
-                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="d-none d-xl-inline-block ms-1">Wassit</span>
-                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
-                        </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
                             <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
@@ -276,11 +260,6 @@
 
                     <div class="collapse navbar-collapse" id="topnav-menu-content">
                         <ul class="navbar-nav">
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle arrow-none " href="/admin " id="topnav-more " role="button ">
-                                    <i class=" fas fa-home " style="color:#252b3b; font-size:19px;"></i>
-                                </a>
-                            </li>
 
 
                             <li class="nav-item dropdown ">
