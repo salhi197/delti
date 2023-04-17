@@ -17,11 +17,9 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 id="compteur">{{$count ?? 0}}</h1>
-                            <div class="qty mt-5">
-                                </div>                            
-
-                        </div><!-- end col -->
+                            <h1 id="compteur" style="font-size:30px;" >{{$count ?? 0}}</h1>
+                        </div>
+                    </div>
 
 @endsection
 @section('scripts')

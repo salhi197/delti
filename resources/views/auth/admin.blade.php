@@ -10,7 +10,6 @@
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
-    <link rel="shortcut icon" href="{{asset('cirm/admin/assets/images/wassit.png')}}">
 
     <!-- Bootstrap Css -->
     <link href="{{asset('cirm/admin/assets/css/bootstrap.min.css')}}" id="bootstrap-style" rel="stylesheet" type="text/css" />
