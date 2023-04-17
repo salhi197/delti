@@ -32,20 +32,6 @@
                                                 <span class="d-none d-sm-block">Citoyen</span> 
                                             </a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link " data-bs-toggle="tab" href="#profile12" role="tab">
-                                                <span class="d-block d-sm-none"><i class="fas fa-home"></i></span>
-                                                <span class="d-none d-sm-block">Association</span> 
-                                            </a>
-                                        </li>
-
-                                                                                
-                                        <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#messages12" role="tab">
-                                                <span class="d-block d-sm-none"><i class="far fa-envelope"></i></span>
-                                                <span class="d-none d-sm-block">Opérateur Economic </span>   
-                                            </a>
-                                        </li>
 
                                     </ul>
                                     <br>
@@ -88,7 +74,7 @@
                                                                     <div class="col-md-3">
                                                                         <div class="mb-3">
                                                                             <label for="validationCustom05" class="form-label">Email *</label>
-                                                                            <input name="email_c" type="Email" class="form-control" id="validationCustom05"
+                                                                            <input name="email_c" type="text" class="form-control" id="validationCustom05"
                                                                                 required>
                                                                         </div>
                                                                     </div>
@@ -228,7 +214,7 @@
                                                                     <div class="col-md-3">
                                                                         <div class="mb-3">
                                                                             <label for="validationCustom05" class="form-label">Email</label>
-                                                                            <input name="email_a" type="Email" class="form-control" id="validationCustom05"
+                                                                            <input name="email_a" type="text" class="form-control" id="validationCustom05"
                                                                                 required>
                                                                         </div>
                                                                     </div>
@@ -418,7 +404,7 @@
                                                                     <div class="col-md-3">
                                                                         <div class="mb-3">
                                                                             <label for="validationCustom05" class="form-label">Email</label>
-                                                                            <input name="email_op" type="Email" class="form-control" id="validationCustom05"
+                                                                            <input name="email_op" type="text" class="form-control" id="validationCustom05"
                                                                                 required>
                                                                         </div>
                                                                     </div>

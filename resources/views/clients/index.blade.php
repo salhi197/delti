@@ -36,10 +36,8 @@
                                         <thead>
                                             <tr >
                                                 <th>ID</th>
-                                                <th>Nom Prénom</th>
-                                                <th>Type</th>
-                                                <th>Wilaya</th>
-                                                <th>Commune</th>
+                                                <th>Username</th>
+                                                <th>Password</th>
                                                 <th>Action</th>                                        
                                             </tr>
                                         </thead>
@@ -49,10 +47,8 @@
                                             @foreach($clients as $client)
                                                 <tr data-href="{{route('client.edit',['client'=>$client->id])}}">
                                                     <td>{{$client->id}}</td>
-                                                    <td>{{$client->nom}} {{$client->prenom}}</td>
-                                                    <td>{{$client->type ?? ''}}</td>
-                                                    <td>{{$client->wilaya()['name'] ?? ''}}</td>
-                                                    <td>{{$client->commune()['name'] ?? ''}}</td>
+                                                    <td>{{$client->email}}</td>
+                                                    <td>{{$client->password_text ?? ''}}</td>
                                                     
                                                     <td>
                                                         &nbsp;&nbsp;&nbsp;
