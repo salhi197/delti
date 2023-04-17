@@ -17,9 +17,8 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <!-- <h1 id="compteur">{{$count ?? 0}}</h1> -->
+                            <h1 id="compteur">{{$count ?? 0}}</h1>
                             <div class="qty mt-5">
-                                    <span type="number" class="count" name="qty" >{{$count ?? ''}}</span>
                                 </div>                            
 
                         </div><!-- end col -->
