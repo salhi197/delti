@@ -8,6 +8,7 @@ use DB;
 use App\Doleance;
 use App\Suggestion;
 use App\Client;
+use App\Wilaya;
 use App\Requete;
 use Carbon\Carbon;
 
