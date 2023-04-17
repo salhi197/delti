@@ -88,7 +88,7 @@ class LoginController extends Controller
     public function adminLogin(Request $request)
     {
         if ($this->guardLogin($request, 'admin')) {
-            return redirect()->intended('/admin');
+            return redirect()->intended('/clients');
         }
 
         return back()->withInput($request->only('email', 'remember'));
