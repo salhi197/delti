@@ -67,9 +67,15 @@ class ClientController extends Controller
     }    
     public function index()
     {
-        $clients = Client::all();
-        $wilayas = Wilaya::all();
-        return view('clients.index',compact('clients','wilayas'));
+        if(Auth::guard('admin')->check()){
+            $clients = Client::all();
+            $wilayas = Wilaya::all();
+            return view('clients.index',compact('clients','wilayas'));
+    
+        }else{
+            return Redirect::route('login.admin');
+        }
+
     }
 
 
