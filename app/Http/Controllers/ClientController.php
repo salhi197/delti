@@ -93,7 +93,7 @@ class ClientController extends Controller
         // if($type=="economic"){
         //     return view('clients.create_economic',compact('wilayas','communes','administrations','secteurs'));
         // }
-        return view('clients.create',compact('wilayas','communes','administrations','secteurs'));
+        return view('clients.create',compact('wilayas','communes'));
 
     }
 
