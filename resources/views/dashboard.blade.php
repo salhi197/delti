@@ -79,7 +79,7 @@
                         <div class="col-md-6">
                             <div class="card-body align-items-center d-flex justify-content-center">
                                     <div class="d-flex">
-                                    {!! QrCode::size(100)->generate('https://delti.power-evo.com/compteur/'.Auth::guard('client')->user()->id); !!}
+                                    {!! QrCode::size(100)->generate('https://deltti.com/compteur/'.Auth::guard('client')->user()->id); !!}
                                     </div>
                                 </div><!-- end cardbody -->
 
