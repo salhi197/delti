@@ -395,6 +395,6 @@ class ClientController extends Controller
     {
         $client = Client::find($client_id);
         $client->delete();
-        return redirect()->route('client.index')->with('success', 'Inséré avec succés ');
+        return redirect()->route('client.index')->with('success', 'Supprimé avec succés ');
     }
 }

@@ -12,7 +12,7 @@
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                                 <h3 class="mb-sm-0">Bienvenue {{Auth::guard('client')->user()->nom ?? Auth::guard('client')->user()->name ?? ''}}</h3>
-                                <h6 class="mb-sm-0">https://deltti.com/c/{{Auth::guard('client')->user()->id}}</h6>
+                                <h6 class="mb-sm-0">deltti.com/c/{{Auth::guard('client')->user()->id}}</h6>
                             </div>
                         </div>
                     </div>
