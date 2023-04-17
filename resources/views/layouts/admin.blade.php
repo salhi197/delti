@@ -72,25 +72,6 @@
             <div class="navbar-header">
                 <div class="d-flex">
                     <!-- LOGO -->
-                    <div class="navbar-brand-box">
-                        <a href="{{route('admin')}}" class="logo logo-dark">
-                            <span class="logo-sm">
-                                <img src="{{asset('images/logo-sm.png')}}" alt="logo-sm" height="45">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="{{asset('images/logo-sm.png')}}" alt="logo-dark" height="45">
-                            </span>
-                        </a>
-
-                        <a href="header2.html" class="logo logo-light">
-                            <span class="logo-sm">
-                                <img src="{{asset('images/logo-sm.png')}}" alt="logo-sm-light" height="45">
-                            </span>
-                            <span class="logo-lg">
-                                <img src="{{asset('images/logo-sm.png')}}" alt="logo-light" height="45">
-                            </span>
-                        </a>
-                    </div> 
                     
                     <button type="button" class="btn btn-sm px-3 font-size-24 d-lg-none header-item" data-bs-toggle="collapse" data-bs-target="#topnav-menu-content">
                         <i class="ri-menu-2-line align-middle"></i>
