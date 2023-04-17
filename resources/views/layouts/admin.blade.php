@@ -301,176 +301,21 @@
                                 </a>
                             </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="{{route('audience.index')}}" id="topnav-apps" role="button">
-                                    <i class=" fas fa-assistive-listening-systems"></i>&nbsp;Audiences
-                                    <div class="arrow-down"></div>
-                                </a>
-                                <div class="dropdown-menu" aria-labelledby="topnav-apps">
 
-                                    <div class="dropdown">
-                                        <a href="{{route('audience.create')}}" class="dropdown-item"><i class="   fas fa-plus-circle"></i>&nbsp; Ajouter Audience</a>
-                                        <a href="{{route('audience.index')}}" class="dropdown-item">Tous les Audiences</a>
-                                        <a href="{{route('audience.index.state',['state'=>4])}}" class="dropdown-item">Audiences : Orientation du
-                                            citoyen</a>
-                                        <a href="{{route('audience.index.state',['state'=>3])}}" class="dropdown-item">Audiences : Hors
-                                            domaines de compétance</a>
-                                        <a href="{{route('audience.index.state',['state'=>6])}}" class="dropdown-item">Audiences : Transferer
-                                            vers Requetes</a>
-                                        <a  href="{{route('audience.index.state',['state'=>7])}}" class="dropdown-item">Audiences : Transferer
-                                            vers Doléances</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle arrow-none " href="# " id="topnav-more " role="button ">
-                                    <i class=" fas fa-video "></i> &nbsp;Visio-conférences
-                                    <div class="arrow-down "></div>
-                                </a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="{{route('requete.index')}}" id="topnav-apps " role="button ">
-                                    <i class=" fas fa-list-ul "></i>&nbsp;Requêtes
-                                    <div class="arrow-down "></div>
-                                </a>
-                                <div class="dropdown-menu " aria-labelledby="topnav-apps ">
-
-                                    <div class="dropdown ">
-                                        <a href="{{route('requete.create')}}" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter Requête</a>
-                                        <a href="{{route('requete.index')}}" class="dropdown-item ">Tous les Requêtes</a>
-                                        <a href="{{route('requete.index.state',['state'=>6])}}" class="dropdown-item ">Requêtes : Nouvelles
-                                            Requêtes</a>
-                                        <a href="{{route('requete.index.state',['state'=>7])}}" class="dropdown-item ">Requêtes : En cours de
-                                            Traitement</a>
-                                        <a href="{{route('requete.index.state',['state'=>11])}}" class="dropdown-item ">Requêtes : Réponse Reçu</a>
-                                        <a href="{{route('requete.index.state',['state'=>10])}}" class="dropdown-item ">Requêtes : Retirés</a>
-                                        <a href="{{route('requete.index.state',['state'=>7])}}" class="dropdown-item ">Requêtes : Hors
-                                            domaines de compétance</a>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle arrow-none " href="{{route( 'doleance.index')}} " id="topnav-apps " role="button ">
-                                    <i class=" fas fa-book "></i>&nbsp;Doléances
-
-                                    <div class="arrow-down "></div>
-                                </a>
-                                <div class="dropdown-menu " aria-labelledby="topnav-apps ">
-
-                                    <div class="dropdown ">
-                                        <a href="{{route( 'doleance.create')}} " class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter Doléance</a>
-                                        <a href="{{route( 'doleance.index')}} " class="dropdown-item ">Tous les Doléances</a>
-
-                                        <a href="{{route('requete.index.state',['state'=>1])}}" class="dropdown-item ">Doléances : Nouvelles
-                                            Doléances</a>
-                                        <a href="{{route('requete.index.state',['state'=>2])}}" class="dropdown-item ">Doléances : En cours de
-                                            Traitement</a>
-                                        <a href="{{route('requete.index.state',['state'=>3])}}" class="dropdown-item ">Doléances : Transferer
-                                            vers Requetes</a>
-                                        <a href="{{route('requete.index.state',['state'=>4])}}" class="dropdown-item ">Doléances : Réponse Reçu</a>
-                                        <a href="#" class="dropdown-item ">Doléances : Retirés</a>
-                                        <a href="{{route('requete.index.state',['state'=>5])}}" class="dropdown-item ">Doléances : Hors
-                                            domaines de compétance</a>
-                                    </div>
-                                </div>
-                            </li>
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle arrow-none " href="# " id="topnav-apps " role="button ">
-                                    <i class=" fas fa-lightbulb "></i>&nbsp;Suggestions
+                                    <i class=" fas fa-lightbulb "></i>&nbsp;Clients
 
                                     <div class="arrow-down "></div>
                                 </a>
                                 <div class="dropdown-menu " aria-labelledby="topnav-apps ">
 
                                     <div class="dropdown ">
-                                        <a href="{{route('suggestion.show.create')}}" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter Suggestion</a>
-                                        <a href="{{route('suggestion.index')}}" class="dropdown-item ">Tous les Suggestions</a>
+                                        <a href="{{route('client.show.create')}}" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter client</a>
+                                        <a href="{{route('client.index')}}" class="dropdown-item ">Tous les Clients</a>
                                     </div>
                                 </div>
                             </li>
-
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle arrow-none " href="# " id="topnav-more " role="button ">
-                                    <i class=" fas fa-chart-bar "></i>&nbsp;Statistiques
-                                    <div class="arrow-down "></div>
-                                </a>
-                                <div class="dropdown-menu " aria-labelledby="topnav-more ">
-                                    <div class="dropdown ">
-                                        <a class="dropdown-item dropdown-toggle arrow-none " href="# " id="topnav-auth " role="button "> Tableau de Bord <div class="arrow-down "></div>
-                                        </a>
-                                    </div>
-                                    <div class="dropdown ">
-                                        <a class="dropdown-item dropdown-toggle arrow-none " href="# " id="topnav-auth " role="button "> Rapports <div class="arrow-down "></div>
-                                        </a>
-                                        <!--
-                                        <div class="dropdown-menu " aria-labelledby="topnav-auth ">
-                                            <a href="auth-login.html " class="dropdown-item ">Ajouter</a>
-                                            <a href="# " class="dropdown-item ">Tous les Utilisateurs de
-                                                L'Application</a>
-                                        </div>
-                                        -->
-                                    </div>
-
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle arrow-none " href="# " id="topnav-more " role="button ">
-                                    <i class=" fas fa-users-cog "></i>&nbsp;Roles & Utilisateurs
-                                    <div class="arrow-down "></div>
-                                </a>
-                                <div class="dropdown-menu " aria-labelledby="topnav-more ">
-                                    <div class="dropdown ">
-                                        <a class="dropdown-item dropdown-toggle arrow-none " href="# " id="topnav-auth " role="button "> Administrateurs <div class="arrow-down "></div>
-                                        </a>
-                                        <div class="dropdown-menu " aria-labelledby="topnav-auth ">
-                                            <a href="{{route('user.show.create')}}" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter</a>
-                                            <a href="#" class="dropdown-item ">Tous les
-                                                Administrateurs</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown ">
-                                        <a class="dropdown-item dropdown-toggle arrow-none " href="# " id="topnav-auth " role="button "> Utilisateurs de l'application <div class="arrow-down "></div>
-                                        </a>
-                                        <div class="dropdown-menu " aria-labelledby="topnav-auth ">
-                                            <a href="{{route('user.show.create')}}" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter</a>
-                                            <a href="#" class="dropdown-item ">Tous les utilisateurs de l'application</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown ">
-                                        <a class="dropdown-item dropdown-toggle arrow-none " href="# " id="topnav-auth " role="button "> Utilisateurs des administrations  <div class="arrow-down "></div>
-                                        </a>
-                                        <div class="dropdown-menu " aria-labelledby="topnav-auth ">
-                                            <a href="{{route('user.show.create')}}" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter</a>
-                                            <a href="# " class="dropdown-item ">Tous les
-                                            utilisateurs des administrations</a>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown ">
-                                        <a class="dropdown-item dropdown-toggle arrow-none " href="{{route('client.index')}}" id="topnav-auth " role="button "> Suscripteurs <div class="arrow-down "></div>
-                                        </a>
-                                        <div class="dropdown-menu " aria-labelledby="topnav-auth ">
-                                            <a href="{{route('client.show.create')}}" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter</a>
-                                            <a href="{{route('client.index')}}" class="dropdown-item ">Tous les
-                                                Suscripteurs</a>
-                                        </div>
-                                    </div>
-
-                                    
-                                    <div class="dropdown ">
-                                        <a class="dropdown-item dropdown-toggle arrow-none " href="{{route('role.index')}}" id="topnav-auth " role="button "> Rôles<div class="arrow-down "></div>
-                                        </a>
-                                        <div class="dropdown-menu " aria-labelledby="topnav-auth ">
-                                            <a href="# " class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter</a>
-                                            <a href="{{route('role.index')}}" class="dropdown-item ">Tous les
-                                                Rôles</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-
 
                             <li class="nav-item dropdown ">
                                 <a class="nav-link dropdown-toggle arrow-none " href="# " id="topnav-components " role="button "> <i class=" fas fa-stream "></i>&nbsp;Paramètres

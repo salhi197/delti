@@ -68,12 +68,12 @@
                                                                         <div class="mb-3">
                                                                             <label for="validationCustom05" class="form-label">Téléphone *</label>
                                                                             <input name="telephone_c" type="number" class="form-control" id="validationCustom05"
-                                                                                required>
+                                                                                >
                                                                         </div>
                                                                     </div>
                                                                     <div class="col-md-3">
                                                                         <div class="mb-3">
-                                                                            <label for="validationCustom05" class="form-label">Email *</label>
+                                                                            <label for="validationCustom05" class="form-label">Username *</label>
                                                                             <input name="email_c" type="text" class="form-control" id="validationCustom05"
                                                                                 required>
                                                                         </div>
@@ -95,45 +95,20 @@
 
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-6">
-                                                                        <div class="mb-6">
-                                                                            <label for="validationCustom02" class="form-label">Commune :  * </label>
-                                                                            <select class="form-control" name="commune_c" id="commune_c">
-                                                                                <option value="" > -- Séléctionner-- </option>
-                                                                                @foreach($wilayas as $wilaya)
-                                                                                    <optgroup label="{{$wilaya->nom ?? $wilaya->name}}">
-                                                                                        @foreach($wilaya->communes() as $commune)
-                                                                                            <option value="{{$commune->id}}"  id="{{$commune->name}}" >
-                                                                                                {{$commune->name}}
-                                                                                            </option>
-
-                                                                                        @endforeach
-
-                                                                                    </optgroup>
-                                                                                @endforeach
-                                                                                
-                                                                                
-                                                                                
-                                                                            </select>                                                    
-
-                                                                            
-                                                                        </div>
-                                                                        <br>
-                                                                    </div>
                                                                     <div class="row">
                                                                         <div class="col-md-3">
                                                                             <div class="mb-3">
                                                                                 <label for="validationCustom05" class="form-label">Date de Naissance</label>
                                                                                 <input name="date_naissance_c" type="date" class="form-control" id="validationCustom05"
-                                                                                    required>
+                                                                                    >
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-3">
                                                                             <div class="mb-3">
                                                                                 <label for="validationCustom02" class="form-label">Sexe *</label>
-                                                                                <select name="sexe_c" class="form-select"  required>
+                                                                                <select name="sexe_c" class="form-select"  >
                                                                                     <option selected disabled value="">Choisir</option>
-                                                                                    <option value="homme">Homme</option>
+                                                                                    <option value="homme" selected>Homme</option>
                                                                                     <option value="femme">Femme</option>
                                                                                 </select>
                                                                             </div>
@@ -142,13 +117,7 @@
                                                                             <div class="mb-3">
                                                                                 <label for="validationCustom05" class="form-label">N° pièce d'identité * (Passeport)</label>
                                                                                 <input name="piece_identite_c" type="number" class="form-control" id="validationCustom05"
-                                                                                    required>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-3">
-                                                                            <div class="mb-3">
-                                                                                <label for="validationCustom05" class="form-label">Date de Délivrance *</label>
-                                                                                <input name="date_delivrance_c" type="date" class="form-control" id="validationCustom05">
+                                                                                    >
                                                                             </div>
                                                                         </div>
                                                                     </div>

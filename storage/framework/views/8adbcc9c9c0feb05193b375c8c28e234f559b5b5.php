@@ -34,10 +34,8 @@
                                         <thead>
                                             <tr >
                                                 <th>ID</th>
-                                                <th>Nom Prénom</th>
-                                                <th>Type</th>
-                                                <th>Wilaya</th>
-                                                <th>Commune</th>
+                                                <th>Username</th>
+                                                <th>Password</th>
                                                 <th>Action</th>                                        
                                             </tr>
                                         </thead>
@@ -47,10 +45,8 @@
                                             <?php $__currentLoopData = $clients; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $client): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                                 <tr data-href="<?php echo e(route('client.edit',['client'=>$client->id])); ?>">
                                                     <td><?php echo e($client->id); ?></td>
-                                                    <td><?php echo e($client->nom); ?> <?php echo e($client->prenom); ?></td>
-                                                    <td><?php echo e($client->type ?? ''); ?></td>
-                                                    <td><?php echo e($client->wilaya()['name'] ?? ''); ?></td>
-                                                    <td><?php echo e($client->commune()['name'] ?? ''); ?></td>
+                                                    <td><?php echo e($client->email); ?></td>
+                                                    <td><?php echo e($client->password_text ?? ''); ?></td>
                                                     
                                                     <td>
                                                         &nbsp;&nbsp;&nbsp;

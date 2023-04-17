@@ -142,20 +142,20 @@ class ClientController extends Controller
         $client->save(); 
 
 
+        return redirect()->route('client.index')->with('success', 'Inséré avec succés ');
 
-        if(Auth::guard('admin')->check()){
-            return redirect()->route('client.index')->with('success', 'Inséré avec succés ');
-        }else{
-            $dataEmail = [
-                'email' => $request['email_c'],
-                'code'=>$code
-            ];
-            Mail::send('email', ['dataEmail' => $dataEmail], function ($message) use ($dataEmail) {
-                $message->to($dataEmail['email'])
-                    ->subject('【Wassit】Code de confirmation ');
-            });                
-            return redirect()->route('confirm_email');//->with('success', 'Bien Insére vous pouvez efféctué le login ');
-        }
+        // if(Auth::guard('admin')->check()){
+        // }else{
+        //     $dataEmail = [
+        //         'email' => $request['email_c'],
+        //         'code'=>$code
+        //     ];
+        //     Mail::send('email', ['dataEmail' => $dataEmail], function ($message) use ($dataEmail) {
+        //         $message->to($dataEmail['email'])
+        //             ->subject('【Wassit】Code de confirmation ');
+        //     });                
+        //     return redirect()->route('confirm_email');//->with('success', 'Bien Insére vous pouvez efféctué le login ');
+        // }
 
         
     }
