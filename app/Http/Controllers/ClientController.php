@@ -83,10 +83,7 @@ class ClientController extends Controller
     {
         $wilayas = Wilaya::all();
         $communes = Commune::all();
-        $communes = Commune::all();
         $wilayas = Wilaya::all();
-        $administrations = Administration::all();
-        $secteurs = Secteur::all();
         // if($type=="citoyen"){
         //     return view('clients.create_citoyen',compact('wilayas','communes','administrations','secteurs'));
         // }
