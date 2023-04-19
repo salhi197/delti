@@ -90,6 +90,22 @@
                 </div>
 
                 <div class="d-flex">
+                    <div class="dropdown d-inline-block user-dropdown">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class=" fas fa-house-user"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item text-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                                    class="ri-shut-down-line align-middle me-1 text-danger"></i> Déconnexion</a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    {{ csrf_field() }}
+                                </form>
+
+                        </div>
+                    </div>
+
 
                     <div class="dropdown d-inline-block d-lg-none ms-2">
                         <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
