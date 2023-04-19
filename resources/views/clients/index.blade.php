@@ -78,9 +78,6 @@
 
 @section('scripts')
 <script>
-            $('#scroll-vertical-datatable').on('click', 'tbody tr', function() {
-                window.location.href = $(this).data('href');
-            })    
 </script>
 @endsection
 
