@@ -116,27 +116,6 @@
                     </div>
 
 
-                    <div class="dropdown d-none d-lg-inline-block ms-1">
-                        <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="ri-apps-2-line"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end">
-                            <div class="px-lg-2">
-                                <div class="row g-0">
-                                    <div class="col">
-                                        <a class="dropdown-item text-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
-                                                class="ri-shut-down-line align-middle me-1 text-danger"></i> Déconnexion</a>
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                                {{ csrf_field() }}
-                                            </form>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
 
 
                     <div class="dropdown d-inline-block user-dropdown">
