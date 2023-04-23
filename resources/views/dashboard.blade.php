@@ -39,7 +39,7 @@
                                    value="deltti.com/c/{{Auth::guard('client')->user()->id}}" class="form-control" >
 
                                     <span class="input-group-btn">
-                                    <a class="btn btn-primary" type="button" style="background-color:#EBB02D; border-style:none;"><i class="fa fa-clone"></i></a>
+                                    <a onclick="myFunction()" class="btn btn-info" type="button" style="background-color:#EBB02D; border-style:none;"><i class="fa fa-clone"></i></a>
                                     </span>
                                 </div>                                                                       
                             </div>
