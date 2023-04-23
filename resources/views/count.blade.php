@@ -38,5 +38,27 @@
 
                         </div><!-- end col -->
                     </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card-body align-items-center d-flex justify-content-center">
+                                    <div class="d-flex">
+                                        <form method="post" action="{{route('set.count')}}">
+                                            @csrf
+                                            <div class="input-group">
+                                               <input type="text" name="count"  class="form-control" >
+
+                                                <span class="input-group-btn">
+                                                <button  type="submit" class="btn btn-success"  ><i class="fa fa-clone"></i>
+                                                </button>
+                                                </span>
+                                            </div>                                                                       
+
+                                        </form>
+
+                                    </div>
+                                </div><!-- end cardbody -->
+
+                        </div><!-- end col -->
+                    </div>
 
 @endsection

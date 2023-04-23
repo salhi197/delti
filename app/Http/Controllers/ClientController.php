@@ -234,6 +234,16 @@ class ClientController extends Controller
 
     }
 
+    public function setCount(Request $request)
+    {
+        $client = Client::find(Auth::guard('client')->user()->id));
+        $count = $request['count'];
+        $client->save();// = Client::find(Auth::guard('client')->user()->id));
+        return Redirect::back();
+
+    }
+
+
     public function compteur($id_client)
     {
         $client = Client::find($id_client);
