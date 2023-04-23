@@ -391,6 +391,22 @@ input:disabled{
             toastr.success('{{Session::get("success")}}')
         @endif
             
+
+    function myFunction() {
+      // Get the text field
+      var copyText = document.getElementById("myInput");
+
+      // Select the text field
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
+
+      // Copy the text inside the text field
+      navigator.clipboard.writeText(copyText.value);
+      
+      // Alert the copied text
+        toastr.error('Copié ')
+    }
+            
 		$(document).ready(function(){
             let client = {!! Auth::guard('client')->user()->id ?? '' !!};
 		    $('.count').prop('disabled', true);
@@ -441,7 +457,7 @@ input:disabled{
 
     @yield('scripts')
     <script>
-        
+
     function myFunction() {
       // Get the text field
       var copyText = document.getElementById("myInput");
