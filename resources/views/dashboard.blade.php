@@ -35,7 +35,7 @@
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                                 <div class="copy-text">
-                                    <input type="text" class="text" value="{{deltti.com/c/{{Auth::guard('client')->user()->id}}" />
+<input type="text" class="text" value="deltti.com/c/{{Auth::guard('client')->user()->id}}" />
                                     <button><i class="fa fa-clone"></i></button>
                                 </div>
                        
