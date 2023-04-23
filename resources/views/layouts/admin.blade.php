@@ -505,7 +505,7 @@
       navigator.clipboard.writeText(copyText.value);
       
       // Alert the copied text
-        toastr.error('Copié')
+        toastr.error('Copié ')
     }
 
     @if(session('error'))
