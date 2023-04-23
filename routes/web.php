@@ -14,7 +14,7 @@ Route::get('/open', 'SettingController@open')->name('open');
 Route::get('/fix', 'HomeController@fix')->name('fix');
 Route::get('/format', 'HomeController@format')->name('format');
 Route::post('/write2', 'HomeController@write2')->name('write2');
-Route::post('/set/count', 'HomeController@setCount')->name('set.count');
+Route::post('/set/count', 'ClientController@setCount')->name('set.count');
 Route::get('/lang/{lang}', 'LangController@setLang')->name('lang');
 
 
