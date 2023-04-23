@@ -34,13 +34,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <div class="copy-text">
-<input type="text" class="text" value="deltti.com/c/{{Auth::guard('client')->user()->id}}" />
-                                    <button><i class="fa fa-clone"></i></button>
-                                </div>
-                       
-<!--                             <h6 class="mb-sm-0">deltti.com/c/{{Auth::guard('client')->user()->id}}</h6>
- -->
+                                <div class="input-group">
+                                   <input type="text"  readonly="" 
+                                   value="deltti.com/c/{{Auth::guard('client')->user()->id}}" class="form-control" >
+
+                                    <span class="input-group-btn">
+                                    <a class="btn btn-primary" type="button" style="background-color:#EBB02D; border-style:none;"><i class="fa fa-clone"></i></a>
+                                    </span>
+                                </div>                                                                       
                             </div>
                         </div>
                     </div>
