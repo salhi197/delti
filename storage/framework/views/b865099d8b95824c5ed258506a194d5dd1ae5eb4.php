@@ -107,7 +107,7 @@ https://templatemo.com/tm-562-space-dynamic
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <img src="<?php echo e(asset('deltti/assets/images/blog-dec.png')); ?>" alt="">                
+              <!-- <img src="<?php echo e(asset('deltti/assets/images/blog-dec.png')); ?>" alt="">                 -->
               </div>
             </div>
           </div>
@@ -494,24 +494,6 @@ $( document ).ready(function() {
           alert('Champs vide')
       }
   })
-  if (!("Notification" in window)) {
-      // Check if the browser supports notifications
-      alert("This browser does not support desktop notification");
-  } else if (Notification.permission === "granted") {
-      // Check whether notification permissions have already been granted;
-      // if so, create a notification
-      const notification = new Notification("Hi there!");
-      // …
-  } else if (Notification.permission !== "denied") {
-      // We need to ask the user for permission
-      Notification.requestPermission().then((permission) => {
-      // If the user accepts, let's create a notification
-      if (permission === "granted") {
-          showNotification();
-          // …
-      }
-      });
-  }            
 });
 </script>
 
