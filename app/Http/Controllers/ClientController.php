@@ -28,6 +28,16 @@ class ClientController extends Controller
 
     }
 
+    public function search(Request $request)
+    {
+        $client = Client::find($request['code']);
+        if(is_null($client)){
+            return Redirect::back()->with('error', 'Code Incorrecte');;
+        }else{
+            return Redirect::route('client.compteur',['id_client'=>$request['code']])->with('error', 'Code Incorrecte');;            
+        }
+
+    }
     public function dashboard()
     {
         if(Auth::guard('client')->check()){
@@ -128,6 +138,7 @@ class ClientController extends Controller
         // dd('saz');
         $client = new Client();
         $client->code = $code;
+        $client->count = 0;
         $client->nom = $request['nom_c'];
         $client->type = 'citoyen';
         $client->prenom = $request['prenom_c'];
@@ -247,6 +258,7 @@ class ClientController extends Controller
     public function compteur($id_client)
     {
         $client = Client::find($id_client);
+        // dd($client);
         if(is_null($client)){
             return Redirect::route('login');
         }else{

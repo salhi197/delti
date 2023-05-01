@@ -4,166 +4,23 @@ use App\Inscription;
 
 
 use Illuminate\Support\Facades\Auth;
-Route::get('/code', function(){
-    dd(Hash::make('labo'));
-});
 
 Route::post('/write', 'HomeController@write')->name('write');
 Route::get('/clear/records', 'HomeController@clear')->name('clear.records');
 Route::get('/open', 'SettingController@open')->name('open');
 Route::get('/fix', 'HomeController@fix')->name('fix');
-Route::get('/format', 'HomeController@format')->name('format');
 Route::post('/write2', 'HomeController@write2')->name('write2');
 Route::post('/set/count', 'ClientController@setCount')->name('set.count');
 Route::get('/lang/{lang}', 'LangController@setLang')->name('lang');
 
 
 
-// Route::get('/fix', function(){
-
-//     $inscriptions = Inscription::all();
-//     foreach ($inscriptions as $inscription) {
-//         $abonnement= Abonnement::find($inscription->abonnement);
-//         $inscription->total = $abonnement->tarif;
-//         $inscription->save();
-//     }
-
-
-// });
-
-
-Route::group(['prefix' => 'audience','middleware' =>'lang', 'as' => 'audience'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'AudienceController@index']);
-
-
-    Route::get('/state/{state}', ['as' => '.index.state', 'uses' => 'RequeteController@indexState']);
-
-    Route::get('/create',['as'=>'.create', 'uses' => 'AudienceController@create']);
-    Route::post('/create', ['as' => '.store', 'uses' => 'AudienceController@store']);
-    Route::post('/create/transfer', ['as' => '.storeTransfer', 'uses' => 'AudienceController@storeTransfer']);
-    Route::post('/create2/transfer', ['as' => '.storeTransfer2', 'uses' => 'AudienceController@storeTransfer2']);
-    Route::post('/filter', ['as' => '.filter', 'uses' => 'AudienceController@filter']);
-    Route::get('/destroy/{id_demande}', ['as' => '.destroy', 'uses' => 'AudienceController@destroy']); 
-    Route::get('/edit/{id_demande}', ['as' => '.edit', 'uses' => 'AudienceController@edit']);
-    Route::post('/update/{audience}', ['as' => '.update', 'uses' => 'AudienceController@update']);    
-});
-
-Route::group(['prefix' => 'doleance','middleware' =>'lang', 'as' => 'doleance'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'DoleanceController@index']);
-    Route::post('/filter', ['as' => '.filter', 'uses' => 'DoleanceController@filter']);
-    Route::get('/state/{state}', ['as' => '.index.state', 'uses' => 'DoleanceController@indexState']);
-
-    Route::get('/client', ['as' => '.index.client', 'uses' => 'DoleanceController@client']);
-    Route::get('/client/create',['as'=>'.create.client', 'uses' => 'DoleanceController@createClient']);
-    Route::post('/create/client', ['as' => '.store.client', 'uses' => 'DoleanceController@storeClient']);
-
-    Route::get('/client/edit/{requete_id}',['as'=>'.edit.client', 'uses' => 'DoleanceController@editClient']);
-    Route::post('/client/update/{requete}', ['as' => '.update.client', 'uses' => 'DoleanceController@updateClient']);
-
-    Route::post('/retirer', ['as' => '.retirer', 'uses' => 'DoleanceController@retirer']);
-
-    Route::get('/new', ['as' => '.new', 'uses' => 'DoleanceController@new']);
-    Route::get('/create',['as'=>'.create', 'uses' => 'DoleanceController@create']);
-    Route::get('/create/audience/{audience}',['as'=>'.createFromAudience', 'uses' => 'DoleanceController@createFromAudience']);
-    Route::post('/filter', ['as' => '.filter', 'uses' => 'DoleanceController@filter']);
-        
-    Route::post('/create', ['as' => '.store', 'uses' => 'DoleanceController@store']);
-    Route::post('/attribuer/{id_doleance}', ['as' => '.attribuer', 'uses' => 'DoleanceController@attribuer']);
-    Route::post('/transferer/{id_doleance}', ['as' => '.transferer', 'uses' => 'DoleanceController@transferer']);
-    Route::get('/destroy/{id_demande}', ['as' => '.destroy', 'uses' => 'DoleanceController@destroy']); 
-    Route::get('/edit/{id_demande}', ['as' => '.edit', 'uses' => 'DoleanceController@edit']);
-    Route::get('/print/{id_demande}', ['as' => '.print', 'uses' => 'DoleanceController@print']);
-
-    Route::post('/update/{doleance}', ['as' => '.update', 'uses' => 'DoleanceController@update']);    
-});
-
-Route::group(['prefix' => 'requete','middleware' =>'lang', 'as' => 'requete'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'RequeteController@index']);
-
-
-    Route::get('/client', ['as' => '.index.client', 'uses' => 'RequeteController@client']);
-    Route::get('/client/create',['as'=>'.create.client', 'uses' => 'RequeteController@createClient']);
-    Route::post('/client/create/', ['as' => '.store.client', 'uses' => 'RequeteController@storeClient']);
-
-    Route::get('/client/edit/{requete_id}',['as'=>'.edit.client', 'uses' => 'RequeteController@editClient']);
-    Route::post('/client/update/{requete}', ['as' => '.update.client', 'uses' => 'RequeteController@updateClient']);
-
-
-    Route::get('/invest', ['as' => '.index.invest', 'uses' => 'RequeteController@invest']);
-    Route::get('/invest/create',['as'=>'.create.invest', 'uses' => 'RequeteController@createinvest']);
-    Route::post('/invest/create/', ['as' => '.store.invest', 'uses' => 'RequeteController@storeinvest']);
-
-
-    Route::get('/state/{state}', ['as' => '.index.state', 'uses' => 'RequeteController@indexState']);
-
-    Route::get('/new', ['as' => '.new', 'uses' => 'RequeteController@new']);
-    Route::get('/create',['as'=>'.create', 'uses' => 'RequeteController@create']);
-    Route::get('/create/audience/{audience}',['as'=>'.createFromAudience', 'uses' => 'RequeteController@createFromAudience']);
-    Route::post('/filter', ['as' => '.filter', 'uses' => 'RequeteController@filter']);
-        
-
-    Route::post('/retirer', ['as' => '.retirer', 'uses' => 'RequeteController@retirer']);
-
-    Route::post('/create', ['as' => '.store', 'uses' => 'RequeteController@store']);
-    Route::post('/update/{requete}', ['as' => '.update', 'uses' => 'RequeteController@update']);
-    Route::post('/attribuer/{id_requete}', ['as' => '.attribuer', 'uses' => 'RequeteController@attribuer']);
-    Route::post('/transferer/{id_requete}', ['as' => '.transferer', 'uses' => 'RequeteController@transferer']);
-    Route::get('/destroy/{id_demande}', ['as' => '.destroy', 'uses' => 'RequeteController@destroy']); 
-    Route::get('/edit/{id_demande}', ['as' => '.edit', 'uses' => 'RequeteController@edit']);
-    Route::get('/print/{id_demande}', ['as' => '.print', 'uses' => 'RequeteController@print']);
-    Route::post('/update/{requete}', ['as' => '.update', 'uses' => 'RequeteController@update']);    
-});
-
-
-Route::group(['prefix' => 'transfert','middleware' =>'lang', 'as' => 'transfert'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'TransfertController@index']);
-    Route::get('/show/create',['as'=>'.show.create', 'uses' => 'TransfertController@create']);
-    Route::post('/create/{requete_id}', ['as' => '.store', 'uses' => 'TransfertController@store']);
-    Route::post('/update/{id_transfert}', ['as' => '.update', 'uses' => 'TransfertController@update']);
-    Route::get('/destroy/{id_transfert}', ['as' => '.destroy', 'uses' => 'TransfertController@destroy']);    
-    Route::get('/edit/{id_transfert}', ['as' => '.edit', 'uses' => 'TransfertController@edit']);
-});
 
 
 
 
-Route::group(['prefix' => 'reclamation','middleware' =>'lang', 'as' => 'reclamation'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'ReclamationController@index']);
-    Route::get('/create',['as'=>'.create', 'uses' => 'ReclamationController@create']);
-    Route::post('/create', ['as' => '.store', 'uses' => 'ReclamationController@store']);
-    Route::get('/destroy/{id_demande}', ['as' => '.destroy', 'uses' => 'ReclamationController@destroy']); 
-    Route::get('/edit/{id_demande}', ['as' => '.edit', 'uses' => 'ReclamationController@edit']);
-    Route::post('/update/{reclamation}', ['as' => '.update', 'uses' => 'ReclamationController@update']);    
-});
 
-Route::group(['prefix' => 'investissement','middleware' =>'lang', 'as' => 'investissement'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'InvestissementController@index']);
-    Route::get('/client', ['as' => '.client', 'uses' => 'InvestissementController@client']);
-    Route::get('/create',['as'=>'.create', 'uses' => 'InvestissementController@create']);
-    Route::get('/create/ar',['as'=>'.create.ar', 'uses' => 'InvestissementController@createAr']);
-    Route::post('/create', ['as' => '.store', 'uses' => 'InvestissementController@store']);
-    Route::get('/destroy/{id_demande}', ['as' => '.destroy', 'uses' => 'InvestissementController@destroy']); 
 
-    Route::post('/retirer', ['as' => '.retirer', 'uses' => 'InvestissementController@retirer']);
-
-    Route::get('/client/create',['as'=>'.create.client', 'uses' => 'InvestissementController@createClient']);
-    Route::post('/create/client', ['as' => '.store.client', 'uses' => 'InvestissementController@storeClient']);
-
-    Route::get('/show/{id_demande}', ['as' => '.show', 'uses' => 'InvestissementController@show']); 
-    Route::post('/repondre/{id_demande}', ['as' => '.repondre', 'uses' => 'InvestissementController@repondre']); 
-
-    Route::get('/edit/{id_demande}', ['as' => '.edit', 'uses' => 'InvestissementController@edit']);
-    Route::post('/update/{investissement}', ['as' => '.update', 'uses' => 'InvestissementController@update']);    
-});
-
-Route::group(['prefix' => 'admin/reclamation','as' => 'reclamation.admin'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'ReclamationControllerAdmin@index']);
-    Route::get('/create',['as'=>'.create', 'uses' => 'ReclamationControllerAdmin@create']);
-    Route::post('/create', ['as' => '.store', 'uses' => 'ReclamationControllerAdmin@store']);
-    Route::get('/destroy/{id_demande}', ['as' => '.destroy', 'uses' => 'ReclamationControllerAdmin@destroy']); 
-    Route::get('/edit/{id_demande}', ['as' => '.edit', 'uses' => 'ReclamationControllerAdmin@edit']);
-    Route::post('/update/{reclamation}', ['as' => '.update', 'uses' => 'ReclamationControllerAdmin@update']);    
-});
 
 
 Route::group(['prefix' => 'user','middleware' =>'lang', 'as' => 'user'], function () {
@@ -234,12 +91,13 @@ Route::get('/lang/{lang}', 'LangController@setLang')->name('lang');
 
 
 // Route::view('/', 'auth.login');
-Route::get('/', 'Auth\LoginController@showClientLoginForm');
+Route::view('/', 'welcome');
 
 // Route::view('/dashboard', 'dashboard')->name('dashboard');
 Route::get('/dashboard', 'ClientController@dashboard')->name('dashboard');
 Route::get('/histo', 'ClientController@histo')->name('histo');
 Route::get('/count', 'ClientController@count')->name('count');
+Route::post('/clients/search', 'ClientController@search')->name('client.search');
 
 // Route::view('/count', 'count')->name('count');
 Route::get('/inscription', 'HomeController@inscription')->name('inscription');
@@ -266,31 +124,10 @@ Route::post('/login/admin', 'Auth\LoginController@adminLogin')->name('login.admi
 Route::get('/login/client', 'Auth\LoginController@showClientLoginForm');
 Route::post('/login/client', 'Auth\LoginController@clientLogin')->name('login.client');
 
-Route::group(['prefix' => 'decharge','middleware' =>'lang', 'as' => 'decharge'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'DechargeController@index']);
-    Route::get('/show/create',['as'=>'.show.create', 'uses' => 'DechargeController@create']);
-    Route::get('/facture/{decharge}',['as'=>'.facture', 'uses' => 'DechargeController@facture']);
-    Route::post('/create', ['as' => '.create', 'uses' => 'DechargeController@store']);
-    Route::get('/destroy/{id_decharge}', ['as' => '.destroy', 'uses' => 'DechargeController@destroy']);    
-    Route::get('/edit/{id_decharge}', ['as' => '.edit', 'uses' => 'DechargeController@edit']);
-    Route::get('/show/{id_decharge}', ['as' => '.show', 'uses' => 'DechargeController@show']);
-    Route::get('/reload', ['as' => '.reload', 'uses' => 'DechargeController@reload']);
-    Route::post('/update/{id_decharge}', ['as' => '.update', 'uses' => 'DechargeController@update']);    
-    Route::post('/filter', ['as' => '.filter', 'uses' => 'DechargeController@filter']);    
-});
 
 
 
 
-Route::group(['prefix' => 'action','middleware' =>'lang', 'as' => 'action'], function () {
-    Route::get('/', ['as' => '.index', 'uses' => 'ActionController@index']);
-    Route::get('/show/create',['as'=>'.show.create', 'uses' => 'ActionController@create']);
-    Route::post('/create', ['as' => '.create', 'uses' => 'ActionController@store']);
-    Route::post('/store', ['as' => '.store', 'uses' => 'ActionController@store']);
-    Route::post('/update/{id_action}', ['as' => '.update', 'uses' => 'ActionController@update']);
-    Route::get('/destroy/{id_action}', ['as' => '.destroy', 'uses' => 'ActionController@destroy']);    
-    Route::get('/edit/{id_action}', ['as' => '.edit', 'uses' => 'ActionController@edit']);
-});
 
 Route::group(['prefix' => 'categorie','middleware' =>'lang', 'as' => 'categorie'], function () {
     Route::get('/{source}', ['as' => '.index', 'uses' => 'CategorieController@index']);

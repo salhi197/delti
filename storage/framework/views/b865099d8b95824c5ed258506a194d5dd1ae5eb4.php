@@ -1,6 +1,4 @@
-@extends('layouts.client2')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
@@ -18,17 +16,17 @@
 
                     <div class="row">
                         <div class="col-md-12">
-                            <h1 id="compteur" style="font-size:30px;" >{{$count ?? 0}}</h1>
+                            <h1 id="compteur" style="font-size:30px;" ><?php echo e($count ?? 0); ?></h1>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="card-body align-items-center d-flex justify-content-center">
                                     <div class="d-flex">
-                                            @csrf
+                                            <?php echo csrf_field(); ?>
                                             <div class="input-group">
                                               <label>créer une notification selon votre numéro de ticket  : </label>
-                                              <input type="hidden" id="clientid" value="{{$client->id}}"  class="form-control" >
+                                              <input type="hidden" id="clientid" value="<?php echo e($client->id); ?>"  class="form-control" >
 
                                                 <input type="number" id="notif" name="count"  class="form-control" >
                                                   <span class="input-group-btn">
@@ -43,8 +41,8 @@
                         </div><!-- end col -->
                     </div>
 
-@endsection
-@section('scripts')
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('scripts'); ?>
 <script>
 
 
@@ -119,4 +117,5 @@
             }            
         });
 </script>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.client2', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

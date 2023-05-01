@@ -14,13 +14,13 @@
     <title>Space Dynamic - SEO HTML5 Template</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{asset('deltti/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="<?php echo e(asset('deltti/vendor/bootstrap/css/bootstrap.min.css')); ?>" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{asset('deltti/assets/css/fontawesome.css')}}">
-    <link rel="stylesheet" href="{{asset('deltti/assets/css/templatemo-space-dynamic.css')}}">
-    <link rel="stylesheet" href="{{asset('deltti/assets/css/animated.css')}}">
-    <link rel="stylesheet" href="{{asset('deltti/assets/css/owl.css')}}">
+    <link rel="stylesheet" href="<?php echo e(asset('deltti/assets/css/fontawesome.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('deltti/assets/css/templatemo-space-dynamic.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('deltti/assets/css/animated.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('deltti/assets/css/owl.css')); ?>">
 <!--
     
 TemplateMo 562 Space Dynamic
@@ -64,7 +64,7 @@ https://templatemo.com/tm-562-space-dynamic
               <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
               <li class="scroll-to-section"><a href="#blog">Blog</a></li> 
               <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="{{route('login')}}">Espace Client</a></div></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="<?php echo e(route('login')); ?>">Espace Client</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -87,8 +87,8 @@ https://templatemo.com/tm-562-space-dynamic
                 <h6>Welcome to Space Dynamic</h6>
                 <h2>We Make <em>Digital Ideas</em> &amp; <span>SEO</span> Marketing</h2>
                 <p>Space Dynamic is a professional looking HTML template using a Bootstrap 5 (beta 2). This CSS template is free for you provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>.</p>
-                <form id="search" action="{{route('client.search')}}" method="POST">
-                    @csrf
+                <form id="search" action="<?php echo e(route('client.search')); ?>" method="POST">
+                    <?php echo csrf_field(); ?>
                   <fieldset>
                     <input type="address" name="code" class="email" placeholder="Code Référence de votre client ..." autocomplete="on" required>
                   </fieldset>
@@ -100,7 +100,7 @@ https://templatemo.com/tm-562-space-dynamic
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="{{asset('deltti/assets/images/banner-right-image.png')}}" alt="team meeting">
+                <img src="<?php echo e(asset('deltti/assets/images/banner-right-image.png')); ?>" alt="team meeting">
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@ https://templatemo.com/tm-562-space-dynamic
       <div class="row">
         <div class="col-lg-4">
           <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <img src="{{asset('deltti/assets/images/about-left-image.png')}}" alt="person graphic">
+            <img src="<?php echo e(asset('deltti/assets/images/about-left-image.png')); ?>" alt="person graphic">
           </div>
         </div>
         <div class="col-lg-8 align-self-center">
@@ -123,7 +123,7 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                   <div class="icon">
-                    <img src="{{asset('deltti/assets/images/service-icon-01.png')}}" alt="reporting">
+                    <img src="<?php echo e(asset('deltti/assets/images/service-icon-01.png')); ?>" alt="reporting">
                   </div>
                   <div class="right-text">
                     <h4>Data Analysis</h4>
@@ -134,7 +134,7 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
                   <div class="icon">
-                    <img src="{{asset('deltti/assets/images/service-icon-02.png')}}" alt="">
+                    <img src="<?php echo e(asset('deltti/assets/images/service-icon-02.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
                     <h4>Data Reporting</h4>
@@ -145,7 +145,7 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
                   <div class="icon">
-                    <img src="{{asset('deltti/assets/images/service-icon-03.png')}}" alt="">
+                    <img src="<?php echo e(asset('deltti/assets/images/service-icon-03.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
                     <h4>Web Analytics</h4>
@@ -156,7 +156,7 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
                   <div class="icon">
-                    <img src="{{asset('deltti/assets/images/service-icon-04.png')}}" alt="">
+                    <img src="<?php echo e(asset('deltti/assets/images/service-icon-04.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
                     <h4>SEO Suggestions</h4>
@@ -176,7 +176,7 @@ https://templatemo.com/tm-562-space-dynamic
       <div class="row">
         <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
           <div class="left-image">
-            <img src="{{asset('deltti/assets/images/services-left-image.png')}}" alt="">
+            <img src="<?php echo e(asset('deltti/assets/images/services-left-image.png')); ?>" alt="">
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -233,7 +233,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
               </div>
               <div class="showed-content">
-                <img src="{{asset('deltti/assets/images/portfolio-image.png')}}" alt="">
+                <img src="<?php echo e(asset('deltti/assets/images/portfolio-image.png')); ?>" alt="">
               </div>
             </div>
           </a>
@@ -246,7 +246,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
               </div>
               <div class="showed-content">
-                <img src="{{asset('deltti/assets/images/portfolio-image.png')}}" alt="">
+                <img src="<?php echo e(asset('deltti/assets/images/portfolio-image.png')); ?>" alt="">
               </div>
             </div>
           </a>
@@ -259,7 +259,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
               </div>
               <div class="showed-content">
-                <img src="{{asset('deltti/assets/images/portfolio-image.png')}}" alt="">
+                <img src="<?php echo e(asset('deltti/assets/images/portfolio-image.png')); ?>" alt="">
               </div>
             </div>
           </a>
@@ -272,7 +272,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
               </div>
               <div class="showed-content">
-                <img src="{{asset('deltti/assets/images/portfolio-image.png')}}" alt="">
+                <img src="<?php echo e(asset('deltti/assets/images/portfolio-image.png')); ?>" alt="">
               </div>
             </div>
           </a>
@@ -291,14 +291,14 @@ https://templatemo.com/tm-562-space-dynamic
         </div>
         <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
           <div class="top-dec">
-            <img src="{{asset('deltti/assets/images/blog-dec.png')}}" alt="">
+            <img src="<?php echo e(asset('deltti/assets/images/blog-dec.png')); ?>" alt="">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
           <div class="left-image">
-            <a href="#"><img src="{{asset('deltti/assets/images/big-blog-thumb.jpg')}}" alt="Workspace Desktop"></a>
+            <a href="#"><img src="<?php echo e(asset('deltti/assets/images/big-blog-thumb.jpg')); ?>" alt="Workspace Desktop"></a>
             <div class="info">
               <div class="inner-content">
                 <ul>
@@ -325,7 +325,7 @@ https://templatemo.com/tm-562-space-dynamic
                   <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                 </div>
                 <div class="right-image">
-                  <a href="#"><img src="{{asset('deltti/assets/images/blog-thumb-01.jpg')}}" alt=""></a>
+                  <a href="#"><img src="<?php echo e(asset('deltti/assets/images/blog-thumb-01.jpg')); ?>" alt=""></a>
                 </div>
               </li>
               <li>
@@ -335,7 +335,7 @@ https://templatemo.com/tm-562-space-dynamic
                   <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                 </div>
                 <div class="right-image">
-                  <a href="#"><img src="{{asset('deltti/assets/images/blog-thumb-01.jpg')}}" alt=""></a>
+                  <a href="#"><img src="<?php echo e(asset('deltti/assets/images/blog-thumb-01.jpg')); ?>" alt=""></a>
                 </div>
               </li>
               <li>
@@ -345,7 +345,7 @@ https://templatemo.com/tm-562-space-dynamic
                   <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                 </div>
                 <div class="right-image">
-                  <a href="#"><img src="{{asset('deltti/assets/images/blog-thumb-01.jpg')}}" alt=""></a>
+                  <a href="#"><img src="<?php echo e(asset('deltti/assets/images/blog-thumb-01.jpg')); ?>" alt=""></a>
                 </div>
               </li>
             </ul>
@@ -397,7 +397,7 @@ https://templatemo.com/tm-562-space-dynamic
               </div>
             </div>
             <div class="contact-dec">
-              <img src="{{asset('deltti/assets/images/contact-decoration.png')}}" alt="">
+              <img src="<?php echo e(asset('deltti/assets/images/contact-decoration.png')); ?>" alt="">
             </div>
           </form>
         </div>
@@ -417,12 +417,12 @@ https://templatemo.com/tm-562-space-dynamic
     </div>
   </footer>
   <!-- Scripts -->
-  <script src="{{asset('deltti/vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{asset('deltti/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('deltti/assets/js/owl-carousel.js')}}"></script>
-  <script src="{{asset('deltti/assets/js/animation.js')}}"></script>
-  <script src="{{asset('deltti/assets/js/imagesloaded.js')}}"></script>
-  <script src="{{asset('deltti/assets/js/templatemo-custom.js')}}"></script>
+  <script src="<?php echo e(asset('deltti/vendor/jquery/jquery.min.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/vendor/bootstrap/js/bootstrap.bundle.min.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/assets/js/owl-carousel.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/assets/js/animation.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/assets/js/imagesloaded.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/assets/js/templatemo-custom.js')); ?>"></script>
 
 </body>
 </html>
