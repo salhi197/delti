@@ -85,12 +85,12 @@ https://templatemo.com/tm-562-space-dynamic
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h6>Welcome to Space Dynamic</h6>
-                <h2>We Make <em>Digital Ideas</em> &amp; <span>SEO</span> Marketing</h2>
-                <p>Space Dynamic is a professional looking HTML template using a Bootstrap 5 (beta 2). This CSS template is free for you provided by <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a>.</p>
+                <h2>On Rend <em>Votre Vie</em>  <span>Plus</span> Simple</h2>
+                <p>Startup Algérienne qui propse une Solution pour les filles d'attente au niveau de différente établissement , En un click . Consulter le tour actuel sans d'avoir se déplacer . </p>
                 <form id="search" action="<?php echo e(route('client.search')); ?>" method="POST">
                     <?php echo csrf_field(); ?>
                   <fieldset>
-                    <input type="address" name="code" class="email" placeholder="Code Référence de votre client ..." autocomplete="on" required>
+                    <input type="address" name="code" class="email" placeholder="Code  Client ..." autocomplete="on" required>
                   </fieldset>
                   <fieldset>
                     <button type="submit" class="main-button">Suivez Votre Client</button>
@@ -171,7 +171,7 @@ https://templatemo.com/tm-562-space-dynamic
     </div>
   </div>
 
-  <div id="services" class="our-services section">
+  <!-- <div id="services" class="our-services section">
     <div class="container">
       <div class="row">
         <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -353,7 +353,7 @@ https://templatemo.com/tm-562-space-dynamic
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <div id="contact" class="contact-us section">
     <div class="container">
@@ -363,7 +363,7 @@ https://templatemo.com/tm-562-space-dynamic
             <h2>Feel Free To Send Us a Message About Your Website Needs</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doer ket eismod tempor incididunt ut labore et dolores</p>
             <div class="phone-info">
-              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
+              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">0 794 49 87 27</a></span></h4>
             </div>
           </div>
         </div>
@@ -409,9 +409,8 @@ https://templatemo.com/tm-562-space-dynamic
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
-          <p>© Copyright 2021 Space Dynamic Co. All Rights Reserved. 
+          <p>© Copyright 2023 . 
           
-          <br>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
         </div>
       </div>
     </div>
