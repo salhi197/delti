@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Space Dynamic - SEO HTML5 Template</title>
+    <title>Deltti</title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?php echo e(asset('deltti/vendor/bootstrap/css/bootstrap.min.css')); ?>" rel="stylesheet">
@@ -52,7 +52,7 @@ https://templatemo.com/tm-562-space-dynamic
         <div class="col-12">
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
-            <a href="index.html" class="logo">
+            <a href="<?php echo e(route('welcome')); ?>" class="logo">
               <h4>Del<span>TTI</span></h4>
             </a>
             <!-- ***** Logo End ***** -->
@@ -60,9 +60,6 @@ https://templatemo.com/tm-562-space-dynamic
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li> 
               <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
               <li class="scroll-to-section"><div class="main-red-button"><a href="<?php echo e(route('login')); ?>">Espace Client</a></div></li> 
             </ul>        

@@ -24,14 +24,14 @@
             <div class="card">
                 <div class="card-body">
 
-                    <!-- <div class="text-center mt-4">
+                    <div class="text-center mt-4">
                         <div class="mb-3">
                             <a href="index.html" class="auth-logo">
-                                <img src="<?php echo e(asset('cirm/admin/assets/images/wassit.png')); ?>" height="50" class="logo-dark mx-auto" alt="">
-                                <img src="<?php echo e(asset('cirm/admin/assets/images/wassit.png')); ?>" height="50" class="logo-light mx-auto" alt="">
+                                <h4>Del<span>TTI</span></h4>
+
                             </a>
                         </div>
-                    </div> -->
+                    </div>
 
                     <h4 class="text-muted text-center font-size-18"><b>Connexion</b></h4>
 

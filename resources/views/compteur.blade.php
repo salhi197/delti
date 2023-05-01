@@ -107,6 +107,7 @@ https://templatemo.com/tm-562-space-dynamic
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+              <img src="{{asset('deltti/assets/images/blog-dec.png')}}" alt="">                
               </div>
             </div>
           </div>

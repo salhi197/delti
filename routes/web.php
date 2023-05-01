@@ -91,7 +91,7 @@ Route::get('/lang/{lang}', 'LangController@setLang')->name('lang');
 
 
 // Route::view('/', 'auth.login');
-Route::view('/', 'welcome');
+Route::view('/', 'welcome')->name('welcome');
 
 // Route::view('/dashboard', 'dashboard')->name('dashboard');
 Route::get('/dashboard', 'ClientController@dashboard')->name('dashboard');
