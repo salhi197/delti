@@ -84,7 +84,7 @@ https://templatemo.com/tm-562-space-dynamic
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Welcome to Space Dynamic</h6>
+                <h6>Bienvenue</h6>
                 <h2>On Rend <em>Votre Vie</em>  <span>Plus</span> Simple</h2>
                 <p>Startup Algérienne qui propse une Solution pour les filles d'attente au niveau de différente établissement , En un click . Consulter le tour actuel sans d'avoir se déplacer . </p>
                 <form id="search" action="{{route('client.search')}}" method="POST">
