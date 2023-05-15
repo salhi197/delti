@@ -9,6 +9,7 @@ use Redirect;
 use App\Commune;
 use App\Secteur;
 use App\Wilaya;
+use App\Ticket;
 use Hash;
 use DB;
 
@@ -21,7 +22,8 @@ class ClientController extends Controller
     public function histo()
     {
         if(Auth::guard('client')->check()){
-            return view('hsito');//,compact('client'));
+            $tickets = Ticket::all();
+            return view('tickets.index',compact('tickets'));
         }else{
             return Redirect::route('login');
         }

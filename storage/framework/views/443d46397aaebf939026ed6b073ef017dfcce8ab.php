@@ -14,25 +14,25 @@
     <meta content="Themesdesign" name="author" />
     <!-- App favicon -->
 
-    <link href="{{asset('cirm/admin/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('css/toastr.css')}}" rel="stylesheet"/>
-    <link href="{{asset('public/css/header.min.css')}}" rel="stylesheet"/>
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
+    <link href="<?php echo e(asset('cirm/admin/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(asset('css/toastr.css')); ?>" rel="stylesheet"/>
+    <link href="<?php echo e(asset('public/css/header.min.css')); ?>" rel="stylesheet"/>
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>" />
     <!-- Bootstrap Css -->
-    <link href="{{asset('cirm/admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('cirm/admin/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('cirm/admin/assets/libs/datatables.net-select-bs4/css//select.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{asset('cirm/admin/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(asset('cirm/admin/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(asset('cirm/admin/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(asset('cirm/admin/assets/libs/datatables.net-select-bs4/css//select.bootstrap4.min.css')); ?>" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(asset('cirm/admin/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css')); ?>" rel="stylesheet" type="text/css" />
 
     <!-- Bootstrap Css -->
-    <link href="{{asset('cirm/admin/assets/css/bootstrap.min.css')}}"  rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(asset('cirm/admin/assets/css/bootstrap.min.css')); ?>"  rel="stylesheet" type="text/css" />
     <!-- Icons Css -->
-    <link href="{{asset('cirm/admin/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="<?php echo e(asset('cirm/admin/assets/css/icons.min.css')); ?>" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="{{asset('cirm/admin/invest/plugins/table/datatable/datatables.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('cirm/admin/invest/plugins/table/datatable/dt-global_style.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('cirm/admin/invest/plugins/table/datatable/custom_dt_multiple_tables.css')}}">
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('cirm/admin/invest/plugins/table/datatable/datatables.css')); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('cirm/admin/invest/plugins/table/datatable/dt-global_style.css')); ?>">
+    <link rel="stylesheet" type="text/css" href="<?php echo e(asset('cirm/admin/invest/plugins/table/datatable/custom_dt_multiple_tables.css')); ?>">
     <style>
         .toast-error { background-color: rgba(255,111,105,0.7) !important; }        
         .select2-results__group{
@@ -152,10 +152,11 @@
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item text-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                            <a class="dropdown-item text-danger" href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
                                     class="ri-shut-down-line align-middle me-1 text-danger"></i> Déconnexion</a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                                    {{ csrf_field() }}
+                                <form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+                                    <?php echo e(csrf_field()); ?>
+
                                 </form>
 
                         </div>
@@ -177,10 +178,11 @@
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
                             <a class="dropdown-item" href="#"><i class="ri-user-line align-middle me-1"></i> Profile</a>
-                            <a class="dropdown-item text-danger" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                            <a class="dropdown-item text-danger" href="<?php echo e(route('logout')); ?>" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
                                     class="ri-shut-down-line align-middle me-1 text-danger"></i> Déconnexion</a>
-						<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-							{{ csrf_field() }}
+						<form id="logout-form" action="<?php echo e(route('logout')); ?>" method="POST" style="display: none;">
+							<?php echo e(csrf_field()); ?>
+
 						</form>
 
                         </div>
@@ -213,8 +215,8 @@
                                 <div class="dropdown-menu " aria-labelledby="topnav-apps ">
 
                                     <div class="dropdown ">
-                                        <a href="{{route('client.show.create')}}" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter client</a>
-                                        <a href="{{route('client.index')}}" class="dropdown-item ">Tous les Clients</a>
+                                        <a href="<?php echo e(route('client.show.create')); ?>" class="dropdown-item "><i class=" fas fa-plus-circle "></i>&nbsp;Ajouter client</a>
+                                        <a href="<?php echo e(route('client.index')); ?>" class="dropdown-item ">Tous les Clients</a>
                                     </div>
                                 </div>
                             </li>
@@ -229,18 +231,18 @@
                                             <div class="arrow-down "></div>
                                         </a>
                                         <div class="dropdown-menu " aria-labelledby="topnav-form">
-                                            <a href="{{route('wilaya.index')}}" class="dropdown-item">Wilaya</a>
-                                            <a href="{{route('daira.index')}}" class="dropdown-item">Daira</a>
-                                            <a href="{{route('commune.index')}}" class="dropdown-item">Communes</a>
-                                            <a href="{{route('secteur.index')}}" class="dropdown-item">Secteurs</a>
-                                            <a href="{{route('administration.index')}}" class="dropdown-item">Administrations</a>
+                                            <a href="<?php echo e(route('wilaya.index')); ?>" class="dropdown-item">Wilaya</a>
+                                            <a href="<?php echo e(route('daira.index')); ?>" class="dropdown-item">Daira</a>
+                                            <a href="<?php echo e(route('commune.index')); ?>" class="dropdown-item">Communes</a>
+                                            <a href="<?php echo e(route('secteur.index')); ?>" class="dropdown-item">Secteurs</a>
+                                            <a href="<?php echo e(route('administration.index')); ?>" class="dropdown-item">Administrations</a>
                                         </div>
                                     </div>
                                     <!-- TT -->
                                     <div class="dropdown ">
                                         <a class="dropdown-item dropdown-toggle arrow-none " href="# " id="topnav-form " role="button "> Audiences <div class="arrow-down "></div></a>
                                         <div class="dropdown-menu " aria-labelledby="topnav-form ">
-                                            <a href="{{route('sourceaudience.index')}}" class="dropdown-item ">Source de
+                                            <a href="<?php echo e(route('sourceaudience.index')); ?>" class="dropdown-item ">Source de
                                                 l'Audience</a>
                                         </div>
                                     </div>
@@ -248,21 +250,21 @@
                                         <a class="dropdown-item dropdown-toggle arrow-none " href="# " id="topnav-form " role="button "> Requêtes <div class="arrow-down "></div>
                                         </a>
                                         <div class="dropdown-menu " aria-labelledby="topnav-form ">
-                                            <a href="{{route('sourcerequete.index')}}" class="dropdown-item ">Sources de Requête</a>
-                                            <a href="{{route('categorie.index',['source'=>'requete'])}}" class="dropdown-item ">Etats de Requête</a>
-                                            <a href="{{route('typerequete.index')}}" class="dropdown-item ">Types de Requête</a>
-                                            <a href="{{route('sujetrequete.index')}}" class="dropdown-item ">Sujets de Requête</a>
-                                            <a href="{{route('axe.index')}}" class="dropdown-item ">Axes de Requête</a>
+                                            <a href="<?php echo e(route('sourcerequete.index')); ?>" class="dropdown-item ">Sources de Requête</a>
+                                            <a href="<?php echo e(route('categorie.index',['source'=>'requete'])); ?>" class="dropdown-item ">Etats de Requête</a>
+                                            <a href="<?php echo e(route('typerequete.index')); ?>" class="dropdown-item ">Types de Requête</a>
+                                            <a href="<?php echo e(route('sujetrequete.index')); ?>" class="dropdown-item ">Sujets de Requête</a>
+                                            <a href="<?php echo e(route('axe.index')); ?>" class="dropdown-item ">Axes de Requête</a>
                                         </div>
                                     </div>
                                     <div class="dropdown ">
                                         <a class="dropdown-item dropdown-toggle arrow-none " href="# " id="topnav-form " role="button "> Doléances <div class="arrow-down "></div>
                                         </a>
                                         <div class="dropdown-menu " aria-labelledby="topnav-form ">
-                                            <a href="{{route('categorie.index',['source'=>'doleance'])}}" class="dropdown-item ">Etats de Doléance</a>
-                                            <!-- <a href="{{route('typedoleance.index')}}" class="dropdown-item ">Types de Doléance</a> -->
-                                            <a href="{{route('sujetdoleance.index')}}" class="dropdown-item ">Sujets de Doléance</a>
-                                            <a href="{{route('axedoleance.index')}}" class="dropdown-item ">Axes de Doléance</a>
+                                            <a href="<?php echo e(route('categorie.index',['source'=>'doleance'])); ?>" class="dropdown-item ">Etats de Doléance</a>
+                                            <!-- <a href="<?php echo e(route('typedoleance.index')); ?>" class="dropdown-item ">Types de Doléance</a> -->
+                                            <a href="<?php echo e(route('sujetdoleance.index')); ?>" class="dropdown-item ">Sujets de Doléance</a>
+                                            <a href="<?php echo e(route('axedoleance.index')); ?>" class="dropdown-item ">Axes de Doléance</a>
                                         </div>
                                     </div>
 
@@ -279,7 +281,7 @@
         </div>
 
 
-        @yield('modals')
+        <?php echo $__env->yieldContent('modals'); ?>
 
         <!-- ============================================================== -->
         <!-- Start right Content here -->
@@ -288,7 +290,7 @@
 
             <div class="page-content">
                 <div class="container-fluid">
-                    @yield('content')
+                    <?php echo $__env->yieldContent('content'); ?>
                 </div>
 
             </div>
@@ -356,38 +358,38 @@
 
             <!-- Right bar overlay-->
             <div class="rightbar-overlay"></div>
-            <script src="{{asset('cirm/admin/assets/libs/jquery/jquery.min.js')}}"></script>
-            <script src="{{asset('cirm/admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-            <script src="{{asset('cirm/admin/assets/libs/metismenu/metisMenu.min.js')}}"></script>
-            <script src="{{asset('cirm/admin/assets/libs/simplebar/simplebar.min.js')}}"></script>
-            <script src="{{asset('cirm/admin/assets/libs/node-waves/waves.min.js')}}"></script>
+            <script src="<?php echo e(asset('cirm/admin/assets/libs/jquery/jquery.min.js')); ?>"></script>
+            <script src="<?php echo e(asset('cirm/admin/assets/libs/bootstrap/js/bootstrap.bundle.min.js')); ?>"></script>
+            <script src="<?php echo e(asset('cirm/admin/assets/libs/metismenu/metisMenu.min.js')); ?>"></script>
+            <script src="<?php echo e(asset('cirm/admin/assets/libs/simplebar/simplebar.min.js')); ?>"></script>
+            <script src="<?php echo e(asset('cirm/admin/assets/libs/node-waves/waves.min.js')); ?>"></script>
 
 
 <!-- apexcharts -->
 
 <!-- jquery.vectormap map -->
-<script src="{{asset('cirm/admin/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
-<script src="{{asset('cirm/admin/assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js')}}"></script>
+<script src="<?php echo e(asset('cirm/admin/assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js')); ?>"></script>
+<script src="<?php echo e(asset('cirm/admin/assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-us-merc-en.js')); ?>"></script>
 
 <!-- Required datatable js -->
-<script src="{{asset('cirm/admin/assets/libs/datatables.net/js/jquery.dataTables.min.js')}}"></script>
-<script src="{{asset('cirm/admin/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js')}}"></script>
+<script src="<?php echo e(asset('cirm/admin/assets/libs/datatables.net/js/jquery.dataTables.min.js')); ?>"></script>
+<script src="<?php echo e(asset('cirm/admin/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js')); ?>"></script>
 
 <!-- Responsive examples -->
-<script src="{{asset('cirm/admin/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js')}}"></script>
-<script src="{{asset('cirm/admin/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')}}"></script>
+<script src="<?php echo e(asset('cirm/admin/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js')); ?>"></script>
+<script src="<?php echo e(asset('cirm/admin/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js')); ?>"></script>
 
-<script src="{{asset('cirm/admin/assets/js/pages/dashboard.init.js')}}"></script>
+<script src="<?php echo e(asset('cirm/admin/assets/js/pages/dashboard.init.js')); ?>"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <!-- App js -->
-<!-- <script src="{{asset('cirm2/plugins/table/datatable/datatables.js')}}"></script> -->
-<script src="{{asset('cirm2/plugins/table/datatable/button-ext/dataTables.buttons.min.js')}}"></script>
-<script src="{{asset('cirm2/plugins/table/datatable/button-ext/jszip.min.js')}}"></script>    
-<script src="{{asset('cirm2/plugins/table/datatable/button-ext/buttons.html5.min.js')}}"></script>
-<script src="{{asset('cirm2/plugins/table/datatable/button-ext/buttons.print.min.js')}}"></script>
-<script src="{{asset('cirm/admin/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js')}}"></script>
+<!-- <script src="<?php echo e(asset('cirm2/plugins/table/datatable/datatables.js')); ?>"></script> -->
+<script src="<?php echo e(asset('cirm2/plugins/table/datatable/button-ext/dataTables.buttons.min.js')); ?>"></script>
+<script src="<?php echo e(asset('cirm2/plugins/table/datatable/button-ext/jszip.min.js')); ?>"></script>    
+<script src="<?php echo e(asset('cirm2/plugins/table/datatable/button-ext/buttons.html5.min.js')); ?>"></script>
+<script src="<?php echo e(asset('cirm2/plugins/table/datatable/button-ext/buttons.print.min.js')); ?>"></script>
+<script src="<?php echo e(asset('cirm/admin/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js')); ?>"></script>
 
-<script src="{{asset('public/js/dataTables.fixedHeader.min.js')}}"></script>	
+<script src="<?php echo e(asset('public/js/dataTables.fixedHeader.min.js')); ?>"></script>	
 
 
 <script>
@@ -458,6 +460,7 @@
             "oLanguage": {
                 "oPaginate": { "sPrevious": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>', "sNext": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>' },
                 "sInfo": "Total : _TOTAL_",
+                "sSearch": '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>',
                 "sSearchPlaceholder": "Search...",
                 "sLengthMenu": "Results :  _MENU_",
                 "infoEmpty": "No records available",
@@ -484,8 +487,8 @@
 
     });
 </script>
-<script src="{{asset('cirm/admin/assets/js/app.js')}}"></script>
-<script src="{{asset('js/toastr.min.js')}}"></script>	
+<script src="<?php echo e(asset('cirm/admin/assets/js/app.js')); ?>"></script>
+<script src="<?php echo e(asset('js/toastr.min.js')); ?>"></script>	
 <script>
 
     function myFunction() {
@@ -503,20 +506,20 @@
         toastr.error('Copié ')
     }
 
-    @if(session('error'))
+    <?php if(session('error')): ?>
         $(function(){
-            toastr.error('{{Session::get("error")}}')
+            toastr.error('<?php echo e(Session::get("error")); ?>')
         })
 
-    @endif
-    @if(session('success'))
-        toastr.success('{{Session::get("success")}}')
-    @endif
+    <?php endif; ?>
+    <?php if(session('success')): ?>
+        toastr.success('<?php echo e(Session::get("success")); ?>')
+    <?php endif; ?>
         
 
 </script>
 
-@yield('scripts')
+<?php echo $__env->yieldContent('scripts'); ?>
 <script>
     $(document).ready(function() {
         // $('select2').select2();

@@ -127,6 +127,15 @@ Route::post('/login/client', 'Auth\LoginController@clientLogin')->name('login.cl
 
 
 
+Route::group(['prefix' => 'ticket','middleware' =>'lang', 'as' => 'ticket'], function () {
+    Route::get('/{source}', ['as' => '.index', 'uses' => 'TicketController@index']);
+    Route::get('/show/create',['as'=>'.show.create', 'uses' => 'TicketController@create']);
+    Route::post('/create', ['as' => '.create', 'uses' => 'TicketController@store']);
+    Route::post('/store', ['as' => '.store', 'uses' => 'TicketController@store']);
+    Route::post('/update/{id_ticket}', ['as' => '.update', 'uses' => 'TicketController@update']);
+    Route::get('/destroy/{id_ticket}', ['as' => '.destroy', 'uses' => 'TicketController@destroy']);    
+    Route::get('/edit/{id_ticket}', ['as' => '.edit', 'uses' => 'TicketController@edit']);
+});
 
 
 Route::group(['prefix' => 'categorie','middleware' =>'lang', 'as' => 'categorie'], function () {

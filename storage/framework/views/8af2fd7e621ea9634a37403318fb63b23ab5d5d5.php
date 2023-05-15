@@ -1,6 +1,4 @@
-@extends('layouts.client')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
                     <div class="row">
                         <div class="col-12">
@@ -23,10 +21,10 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                            <h3 class="mb-sm-0">Bienvenue {{Auth::guard('client')->user()->nom ?? Auth::guard('client')->user()->name}}</h3>
+                            <h3 class="mb-sm-0">Bienvenue <?php echo e(Auth::guard('client')->user()->nom ?? Auth::guard('client')->user()->name); ?></h3>
 
                        
-<!--                             <h6 class="mb-sm-0">deltti.com/c/{{Auth::guard('client')->user()->id}}</h6>
+<!--                             <h6 class="mb-sm-0">deltti.com/c/<?php echo e(Auth::guard('client')->user()->id); ?></h6>
  -->
                             </div>
                         </div>
@@ -36,7 +34,7 @@
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                                 <div class="input-group">
                                    <input type="text" id="myInput" readonly="" 
-                                   value="deltti.com/c/{{Auth::guard('client')->user()->id}}" class="form-control" >
+                                   value="deltti.com/c/<?php echo e(Auth::guard('client')->user()->id); ?>" class="form-control" >
 
                                     <span class="input-group-btn">
                                     <a onclick="myFunction()" class="btn btn-success" type="button" ><i class="fa fa-clone"></i></a>
@@ -61,7 +59,7 @@
                                                     class=" fw-bold font-size-12 me-2" style="color: #fff;">Commencer Votre Compteur . </p>
                                         </div>
                                         <div class="avatar-sm">
-                                            <a href="{{route('count')}}">
+                                            <a href="<?php echo e(route('count')); ?>">
                                             <span class="avatar-title bg-light text-primary rounded-3">
                                                 <i class="mdi mdi-plus font-size-24" ></i>
                                             </span>
@@ -84,7 +82,7 @@
                                                     class=" fw-bold font-size-12 me-2" style="color: #fff;">Consulter Votre Historique . </p>
                                         </div>
                                         <div class="avatar-sm">
-                                            <a href="{{route('histo')}}">
+                                            <a href="<?php echo e(route('histo')); ?>">
                                             <span class="avatar-title bg-light text-success rounded-3">
                                                 <i class="fa fa-list font-size-24"  style="color: #252b3b"></i>
                                             </span>
@@ -97,7 +95,7 @@
                         <div class="col-md-6">
                             <div class="card-body align-items-center d-flex justify-content-center">
                                     <!-- <div class="d-flex">
-                                    {!! QrCode::size(100)->generate('https://deltti.com/compteur/'.Auth::guard('client')->user()->id); !!} -->
+                                    <?php echo QrCode::size(100)->generate('https://deltti.com/compteur/'.Auth::guard('client')->user()->id);; ?> -->
                                     </div>
                                 </div><!-- end cardbody -->
 
@@ -107,4 +105,5 @@
 
                     </div>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.client', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
