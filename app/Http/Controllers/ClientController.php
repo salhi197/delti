@@ -36,7 +36,7 @@ class ClientController extends Controller
         if(is_null($client)){
             return Redirect::back()->with('error', 'Code Incorrecte');;
         }else{
-            return Redirect::route('client.compteur',['id_client'=>$request['code']])->with('error', 'Code Incorrecte');;            
+            return Redirect::route('client.compteur',['id_client'=>$request['code']])->with('success', 'Parfait !!');;            
         }
 
     }

@@ -27,7 +27,7 @@
                     <div class="text-center mt-4">
                         <div class="mb-3">
                             <a href="index.html" class="auth-logo">
-                                <h4>Del<span>TTI</span></h4>
+                                <h4>Del<span>tti</span></h4>
 
                             </a>
                         </div>

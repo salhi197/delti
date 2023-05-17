@@ -14,14 +14,14 @@
     <title>Deltti</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{asset('deltti/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <link href="<?php echo e(asset('deltti/vendor/bootstrap/css/bootstrap.min.css')); ?>" rel="stylesheet">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{{asset('deltti/assets/css/fontawesome.css')}}">
-    <link rel="stylesheet" href="{{asset('deltti/assets/css/templatemo-space-dynamic.css')}}">
-    <link rel="stylesheet" href="{{asset('deltti/assets/css/animated.css')}}">
-    <link rel="stylesheet" href="{{asset('deltti/assets/css/owl.css')}}">
-    <link href="{{asset('css/toastr.css')}}" rel="stylesheet"/>
+    <link rel="stylesheet" href="<?php echo e(asset('deltti/assets/css/fontawesome.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('deltti/assets/css/templatemo-space-dynamic.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('deltti/assets/css/animated.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset('deltti/assets/css/owl.css')); ?>">
+    <link href="<?php echo e(asset('css/toastr.css')); ?>" rel="stylesheet"/>
     <style>
         .toast-error { background-color: rgba(255,111,105,0.7) !important; }        
     </style>
@@ -69,7 +69,7 @@ https://templatemo.com/tm-562-space-dynamic
               <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
               <li class="scroll-to-section"><a href="#blog">Blog</a></li> 
               <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="{{route('login')}}">Espace Client</a></div></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="<?php echo e(route('login')); ?>">Espace Client</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -91,10 +91,10 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h6>Pour assurer le bon fonctionnement , Vous devez vous présentez avant deux (2) tickets de votre tour</h6>
                 <p>Le ticket Actuel est : </p>
-                <h2 id="compteur">{{$count ?? 0}}</h2>
-                <form id="search" action="{{route('client.search')}}" method="POST">
-                    <input type="hidden" id="clientid" value="{{$client->id}}"  class="form-control" >
-                    @csrf
+                <h2 id="compteur"><?php echo e($count ?? 0); ?></h2>
+                <form id="search" action="<?php echo e(route('client.search')); ?>" method="POST">
+                    <input type="hidden" id="clientid" value="<?php echo e($client->id); ?>"  class="form-control" >
+                    <?php echo csrf_field(); ?>
                     <fieldset>
                         <input type="address" name="code" class="email" placeholder="Code  Client ..." autocomplete="on" required>
                     </fieldset>
@@ -107,7 +107,7 @@ https://templatemo.com/tm-562-space-dynamic
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-              <!-- <img src="{{asset('deltti/assets/images/blog-dec.png')}}" alt="">                 -->
+              <!-- <img src="<?php echo e(asset('deltti/assets/images/blog-dec.png')); ?>" alt="">                 -->
               </div>
             </div>
           </div>
@@ -121,7 +121,7 @@ https://templatemo.com/tm-562-space-dynamic
       <div class="row">
         <div class="col-lg-4">
           <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
-            <img src="{{asset('deltti/assets/images/about-left-image.png')}}" alt="person graphic">
+            <img src="<?php echo e(asset('deltti/assets/images/about-left-image.png')); ?>" alt="person graphic">
           </div>
         </div>
         <div class="col-lg-8 align-self-center">
@@ -130,10 +130,10 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                   <div class="icon">
-                    <img src="{{asset('deltti/assets/images/service-icon-01.png')}}" alt="reporting">
+                    <img src="<?php echo e(asset('deltti/assets/images/service-icon-01.png')); ?>" alt="reporting">
                   </div>
                   <div class="right-text">
-                    <h4>Rapidite</h4>
+                    <h4>Data Analysis</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
@@ -141,10 +141,10 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
                   <div class="icon">
-                    <img src="{{asset('deltti/assets/images/service-icon-02.png')}}" alt="">
+                    <img src="<?php echo e(asset('deltti/assets/images/service-icon-02.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>Fluidite</h4>
+                    <h4>Data Reporting</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
@@ -152,10 +152,10 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
                   <div class="icon">
-                    <img src="{{asset('deltti/assets/images/service-icon-03.png')}}" alt="">
+                    <img src="<?php echo e(asset('deltti/assets/images/service-icon-03.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>Précision </h4>
+                    <h4>Web Analytics</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
@@ -163,10 +163,10 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="col-lg-6">
                 <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
                   <div class="icon">
-                    <img src="{{asset('deltti/assets/images/service-icon-04.png')}}" alt="">
+                    <img src="<?php echo e(asset('deltti/assets/images/service-icon-04.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>--</h4>
+                    <h4>SEO Suggestions</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
@@ -183,7 +183,7 @@ https://templatemo.com/tm-562-space-dynamic
       <div class="row">
         <div class="col-lg-6 align-self-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
           <div class="left-image">
-            <img src="{{asset('deltti/assets/images/services-left-image.png')}}" alt="">
+            <img src="<?php echo e(asset('deltti/assets/images/services-left-image.png')); ?>" alt="">
           </div>
         </div>
         <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
@@ -240,7 +240,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
               </div>
               <div class="showed-content">
-                <img src="{{asset('deltti/assets/images/portfolio-image.png')}}" alt="">
+                <img src="<?php echo e(asset('deltti/assets/images/portfolio-image.png')); ?>" alt="">
               </div>
             </div>
           </a>
@@ -253,7 +253,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
               </div>
               <div class="showed-content">
-                <img src="{{asset('deltti/assets/images/portfolio-image.png')}}" alt="">
+                <img src="<?php echo e(asset('deltti/assets/images/portfolio-image.png')); ?>" alt="">
               </div>
             </div>
           </a>
@@ -266,7 +266,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
               </div>
               <div class="showed-content">
-                <img src="{{asset('deltti/assets/images/portfolio-image.png')}}" alt="">
+                <img src="<?php echo e(asset('deltti/assets/images/portfolio-image.png')); ?>" alt="">
               </div>
             </div>
           </a>
@@ -279,7 +279,7 @@ https://templatemo.com/tm-562-space-dynamic
                 <p>Lorem ipsum dolor sit ameti ctetur aoi adipiscing eto.</p>
               </div>
               <div class="showed-content">
-                <img src="{{asset('deltti/assets/images/portfolio-image.png')}}" alt="">
+                <img src="<?php echo e(asset('deltti/assets/images/portfolio-image.png')); ?>" alt="">
               </div>
             </div>
           </a>
@@ -298,14 +298,14 @@ https://templatemo.com/tm-562-space-dynamic
         </div>
         <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
           <div class="top-dec">
-            <img src="{{asset('deltti/assets/images/blog-dec.png')}}" alt="">
+            <img src="<?php echo e(asset('deltti/assets/images/blog-dec.png')); ?>" alt="">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
           <div class="left-image">
-            <a href="#"><img src="{{asset('deltti/assets/images/big-blog-thumb.jpg')}}" alt="Workspace Desktop"></a>
+            <a href="#"><img src="<?php echo e(asset('deltti/assets/images/big-blog-thumb.jpg')); ?>" alt="Workspace Desktop"></a>
             <div class="info">
               <div class="inner-content">
                 <ul>
@@ -332,7 +332,7 @@ https://templatemo.com/tm-562-space-dynamic
                   <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                 </div>
                 <div class="right-image">
-                  <a href="#"><img src="{{asset('deltti/assets/images/blog-thumb-01.jpg')}}" alt=""></a>
+                  <a href="#"><img src="<?php echo e(asset('deltti/assets/images/blog-thumb-01.jpg')); ?>" alt=""></a>
                 </div>
               </li>
               <li>
@@ -342,7 +342,7 @@ https://templatemo.com/tm-562-space-dynamic
                   <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                 </div>
                 <div class="right-image">
-                  <a href="#"><img src="{{asset('deltti/assets/images/blog-thumb-01.jpg')}}" alt=""></a>
+                  <a href="#"><img src="<?php echo e(asset('deltti/assets/images/blog-thumb-01.jpg')); ?>" alt=""></a>
                 </div>
               </li>
               <li>
@@ -352,7 +352,7 @@ https://templatemo.com/tm-562-space-dynamic
                   <p>Lorem ipsum dolor sit amsecteturii and sed doer ket eismod...</p>
                 </div>
                 <div class="right-image">
-                  <a href="#"><img src="{{asset('deltti/assets/images/blog-thumb-01.jpg')}}" alt=""></a>
+                  <a href="#"><img src="<?php echo e(asset('deltti/assets/images/blog-thumb-01.jpg')); ?>" alt=""></a>
                 </div>
               </li>
             </ul>
@@ -404,7 +404,7 @@ https://templatemo.com/tm-562-space-dynamic
               </div>
             </div>
             <div class="contact-dec">
-              <img src="{{asset('deltti/assets/images/contact-decoration.png')}}" alt="">
+              <img src="<?php echo e(asset('deltti/assets/images/contact-decoration.png')); ?>" alt="">
             </div>
           </form>
         </div>
@@ -423,24 +423,24 @@ https://templatemo.com/tm-562-space-dynamic
     </div>
   </footer>
   <!-- Scripts -->
-  <script src="{{asset('deltti/vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{asset('deltti/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-  <script src="{{asset('deltti/assets/js/owl-carousel.js')}}"></script>
-  <script src="{{asset('deltti/assets/js/animation.js')}}"></script>
-  <script src="{{asset('deltti/assets/js/imagesloaded.js')}}"></script>
-  <script src="{{asset('deltti/assets/js/templatemo-custom.js')}}"></script>
-  <script src="{{asset('js/toastr.min.js')}}"></script>	
+  <script src="<?php echo e(asset('deltti/vendor/jquery/jquery.min.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/vendor/bootstrap/js/bootstrap.bundle.min.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/assets/js/owl-carousel.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/assets/js/animation.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/assets/js/imagesloaded.js')); ?>"></script>
+  <script src="<?php echo e(asset('deltti/assets/js/templatemo-custom.js')); ?>"></script>
+  <script src="<?php echo e(asset('js/toastr.min.js')); ?>"></script>	
 
   <script>
-        @if(session('error'))
+        <?php if(session('error')): ?>
             $(function(){
-                toastr.error('{{Session::get("error")}}')
+                toastr.error('<?php echo e(Session::get("error")); ?>')
             })
 
-        @endif
-        @if(session('success'))
-            toastr.success('{{Session::get("success")}}')
-        @endif
+        <?php endif; ?>
+        <?php if(session('success')): ?>
+            toastr.success('<?php echo e(Session::get("success")); ?>')
+        <?php endif; ?>
 
 
 setInterval(function(){         
