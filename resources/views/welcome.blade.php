@@ -60,7 +60,8 @@ https://templatemo.com/tm-562-space-dynamic
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="{{route('login')}}">Espace Client</a></li> 
+              <li class="scroll-to-section"><a href="/login">Espace Client</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="{{route('login')}}">Creer Un Compte</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
