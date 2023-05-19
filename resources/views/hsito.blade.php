@@ -13,7 +13,9 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="form-group">   
-                            <input type="text" class="form-control form-control-navbar" name="query" value="" placeholder=" Recherche" id="myInput">
+                                <a class="btn btn-info">
+                                    Retour Au Compteur
+                                </a>
 
                             </div>
                         </div>

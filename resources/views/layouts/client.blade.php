@@ -397,7 +397,7 @@ input:disabled{
 
 
 
-            $('#scroll-vertical-datatable').DataTable( {
+        $('#scroll-vertical-datatable').DataTable( {
         "dom": "<'dt--top-section'<'row'<'col-xl-12 col-md-12 d-flex 'B><'col-sm-12 col-md-12 d-flex justify-content-md-end      mt-md-0 mt-3'f>>>" +
         "<'table-responsive'tr>" +
         "<'dt--bottom-section d-sm-flex justify-content-sm-between text-center'<'dt--pages-count  mb-sm-0 mb-3'i><'dt--pagination'p>>",        
@@ -466,18 +466,9 @@ input:disabled{
                 "sSearchPlaceholder": "Search...",
                 "sLengthMenu": "Results :  _MENU_",
                 "infoEmpty": "No records available",
-
-            },
-            "columnDefs": [
-                { "width": "20%", "targets": 0 }
-            ],
-            "responsive": {
-                details: {
-                    type: 'column',
-                }
             },
 
-            "stripeClasses": [],
+            
             "order": [[ 0, 'asc' ]],
             "lengthMenu": [7, 10, 20, 50],
             "pageLength": 10

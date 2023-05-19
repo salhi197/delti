@@ -18,7 +18,12 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div>
-                                        <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal" style="background-color:#e30613; border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  Ajouter </button>
+                                    <a class="btn btn-info" href="<?php echo e(route('count')); ?>">
+                                        Retour Au Compteur
+                                    </a>
+
+                                        <!-- <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal" style="background-color:#e30613; border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  
+                                        Ajouter </button> -->
                                         <div class="modal fade" id="firstmodal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
