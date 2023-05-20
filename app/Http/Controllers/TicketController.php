@@ -8,6 +8,7 @@ use App\Categorie;
 use App\Souscategorie;
 use App\Soussouscategorie;
 use App\Ticket;
+use Auth;
 use App\Sub;
 use Response;
 use Illuminate\Http\Request;
