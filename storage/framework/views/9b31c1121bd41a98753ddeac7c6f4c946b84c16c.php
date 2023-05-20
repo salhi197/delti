@@ -78,9 +78,9 @@
                             <br>
                             
                             <div class="col-md-12">
-                            <button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal" style="background-color:#e30613; border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  
+                            <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal" style=" border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  
                                             Ajouter Ticket</button>
-                                    <a class="btn btn-danger" style="background-color:#e30613; border-style:none;" href="/histo">
+                                    <a class="btn btn-success" style=" border-style:none;" href="/histo">
                                     <i class="fas  fas fa-list"></i> Liste Ticket
                                         </a>
 
@@ -125,7 +125,7 @@
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                         <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Fermer</button>
-                                                                        <button class="btn btn-primary" data-bs-target="#secondmodal" data-bs-toggle="modal" data-bs-dismiss="modal" style="background-color:#e30613; border-style:none;"><i class="fas fa-save"></i> Sauvegarder</button>
+                                                                        <button class="btn btn-primary" data-bs-target="#secondmodal" data-bs-toggle="modal" data-bs-dismiss="modal" style=" border-style:none;"><i class="fas fa-save"></i> Sauvegarder</button>
                                                                 </div>
                                                         </form>
                                                     </div>
