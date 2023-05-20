@@ -86,16 +86,6 @@ https://templatemo.com/tm-562-space-dynamic
                 <h6>veuillez vous présentez un tour à  l'avance pour confirmer votre présence sinon votre tour seras annuler .  </h6>
                 <p>le tour Actuel est le numéro : </p>
                 <h2 id="compteur">{{$count ?? 0}}</h2>
-                <!-- <form id="search" action="{{route('client.search')}}" method="POST">
-                    <input type="hidden" id="clientid" value="{{$client->id}}"  class="form-control" >
-                    @csrf
-                    <fieldset>
-                        <input type="address" name="code" class="email" placeholder="Numero ticket ..." autocomplete="on" required>
-                    </fieldset>
-                    <fieldset>
-                        <button type="submit" class="main-button">Créer Une Notification</button>
-                    </fieldset>
-                </form> -->
 
               </div>
             </div>

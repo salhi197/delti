@@ -20,7 +20,8 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div>
-                                    <a class="btn btn-info" href="{{route('count')}}">
+                                    <a class="btn btn-success" href="{{route('count')}}">
+                                        <i class="fa fa-list"></i>
                                         Retour Au Compteur
                                     </a>
 
@@ -41,7 +42,7 @@
                                                                     <div class="col-md-6">
                                                                         <div class="mb-3">
                                                                             <label for="validationCustom02" class="form-label">Nom Prenom :</label>
-                                                                            <input type="text"  name="nom" class="form-control" id="validationCustom02" required>
+                                                                            <input type="text" require name="nom" class="form-control" id="validationCustom02" required>
                                                                         </div>
                                                                     </div>
 
@@ -49,20 +50,20 @@
                                                                     <div class="col-md-6">
                                                                         <div class="mb-3">
                                                                             <label for="validationCustom02" class="form-label">Telephone : </label>
-                                                                            <input type="number"   name="telephone" class="form-control" id="validationCustom02" placeholder=""  required>
+                                                                            <input type="number"  required name="telephone" class="form-control" id="validationCustom02" placeholder=""  required>
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="col-md-6">
                                                                         <div class="mb-3">
                                                                             <label for="validationCustom02" class="form-label">Tour :  </label>
-                                                                            <input type="number"   name="ticket" class="form-control" id="validationCustom02" placeholder=""  required>
+                                                                            <input type="number" required  name="ticket" class="form-control" id="validationCustom02" placeholder=""  required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                         <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Fermer</button>
-                                                                        <button class="btn btn-primary" data-bs-target="#secondmodal" data-bs-toggle="modal" data-bs-dismiss="modal" style="background-color:#e30613; border-style:none;"><i class="fas fa-save"></i> Sauvegarder</button>
+                                                                        <button class="btn btn-success" data-bs-target="#secondmodal" data-bs-toggle="modal" data-bs-dismiss="modal" style="border-style:none;"><i class="fas fa-save"></i> Sauvegarder</button>
                                                                 </div>
                                                         </form>
                                                     </div>

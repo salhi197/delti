@@ -27,7 +27,8 @@ class TicketController extends Controller
         $ticket = new Ticket([
             'nom' => $request['nom'],
             'telephone' => $request['telephone'],
-            'ticket' => $request['ticket']
+            'ticket' => $request['ticket'],
+            'type' => $request['type']
         ]);
         $ticket->save();  
         return redirect()->back()->with('success', 'inserted successfuly ! ');

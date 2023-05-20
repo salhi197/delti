@@ -84,9 +84,7 @@
     border-radius: 50%;
     background-clip: padding-box;
 }
-div {
-    text-align: center;
-}
+
 .minus:hover{
     background-color: #717fe0 !important;
 }
@@ -124,7 +122,7 @@ input:disabled{
             color:black;
         }  
     </style>
-
+    @yield('styles')
 </head>
 
 <body data-topbar="dark" data-layout="horizontal">

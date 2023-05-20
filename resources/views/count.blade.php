@@ -2,13 +2,13 @@
 
 @section('content')
 
-                    <div class="row">
+                    <div class="row centerdiv">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row centerdiv">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                                 <h3 class="mb-sm-0">Bienvenue {{Auth::guard('client')->user()->nom ?? Auth::guard('client')->user()->name ?? ''}}</h3>
@@ -17,12 +17,12 @@
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row centerdiv">
                         <div class="col-md-12">
                                 <div class="qty mt-5">
-                                    <span class="minus bg-dark">-</span>
+                                    <span class="minus btn-success">-</span>
                                     <span type="number" class="count" name="qty" >{{Auth::guard('client')->user()->count}}</span>
-                                    <span class="plus bg-dark">+</span>
+                                    <span class="plus btn-success">+</span>
                                 </div>                            
                         </div><!-- end col -->
                     </div>
@@ -38,7 +38,7 @@
 
                         </div><!-- end col -->
                     </div>
-                    <div class="row">
+                    <div class="row centerdiv">
                         <div class="col-md-12">
                             <div class="card-body align-items-center d-flex justify-content-center">
                                     <div class="d-flex">
@@ -63,18 +63,10 @@
                     </div>
 
 
-                    <div class="row">
-                        
 
-
-
-                           
-
-                
-                    </div>
 <br>
                   
-                    <div class="row">
+                    <div class="row centerdiv">
                         <div class="col-md-12">
                             
                             <br>
@@ -91,7 +83,7 @@
                     </div>
 
 
-                    <div class="modal fade" id="firstmodal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+                                        <div class="modal fade" id="firstmodal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
@@ -124,10 +116,18 @@
                                                                             <input type="number"   name="ticket" class="form-control" id="validationCustom02" placeholder=""  required>
                                                                         </div>
                                                                     </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="validationCustom02" class="form-label">Type (Consultation / Suivie / etc ..) :  </label>
+                                                                            <input type="number"   name="type" class="form-control" id="validationCustom02" placeholder=""  required>
+                                                                        </div>
+                                                                    </div>
+
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                         <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Fermer</button>
-                                                                        <button class="btn btn-primary" data-bs-target="#secondmodal" data-bs-toggle="modal" data-bs-dismiss="modal" style=" border-style:none;"><i class="fas fa-save"></i> Sauvegarder</button>
+                                                                        <button class="btn btn-success" data-bs-target="#secondmodal" data-bs-toggle="modal" data-bs-dismiss="modal" style=" border-style:none;"><i class="fas fa-save"></i> Sauvegarder</button>
                                                                 </div>
                                                         </form>
                                                     </div>
@@ -135,4 +135,13 @@
                                                 </div>
                                             </div>
                                         </div>
+@endsection
+
+@section('styles')
+<style>
+.centerdiv {
+    text-align: center;
+}
+
+</style>
 @endsection
