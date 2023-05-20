@@ -101,6 +101,13 @@
                                                     <td>{{$ticket->nom ?? $ticket->type_ar}}</td>
                                                     <td>{{$ticket->ticket ?? ''}}</td>
                                                     <td>{{$ticket->telephone ?? $ticket->type_en}}</td>
+                                                    <td>
+                                                    <a href="{{route('ticket.destroy',['ticket'=>$ticket->id])}}"
+                                                                    onclick="return confirm('etes vous sure  ?')" class="text-white btn btn-danger">
+                                                                    <i class="fas fa-trash"></i>
+                                                        </a>   
+
+                                                    </td>
 
 
                                                 </tr>

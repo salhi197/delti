@@ -99,6 +99,13 @@
                                                     <td><?php echo e($ticket->nom ?? $ticket->type_ar); ?></td>
                                                     <td><?php echo e($ticket->ticket ?? ''); ?></td>
                                                     <td><?php echo e($ticket->telephone ?? $ticket->type_en); ?></td>
+                                                    <td>
+                                                    <a href="<?php echo e(route('ticket.destroy',['ticket'=>$ticket->id])); ?>"
+                                                                    onclick="return confirm('etes vous sure  ?')" class="text-white btn btn-danger">
+                                                                    <i class="fas fa-trash"></i>
+                                                        </a>   
+
+                                                    </td>
 
 
                                                 </tr>
