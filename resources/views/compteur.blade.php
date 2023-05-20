@@ -62,11 +62,8 @@ https://templatemo.com/tm-562-space-dynamic
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li> 
-              <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="{{route('login')}}">Espace Client</a></div></li> 
+              <li class="scroll-to-section"><a href="/login">Espace Client</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="{{route('login')}}">Creer Un Compte</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -93,7 +90,7 @@ https://templatemo.com/tm-562-space-dynamic
                     <input type="hidden" id="clientid" value="{{$client->id}}"  class="form-control" >
                     @csrf
                     <fieldset>
-                        <input type="address" name="code" class="email" placeholder="Code  Client ..." autocomplete="on" required>
+                        <input type="address" name="code" class="email" placeholder="Numero ticket ..." autocomplete="on" required>
                     </fieldset>
                     <fieldset>
                         <button type="submit" class="main-button">Créer Une Notification</button>
