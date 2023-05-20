@@ -17,7 +17,7 @@ class TicketController extends Controller
  
     public function index()
     {
-        $tickets = Ticket::where('source',$source)->get();
+        $tickets = Ticket::where('user',Auth::user()->id)->get();
         return view('tickets.index',compact('tickets','source'));
     }
 
@@ -28,7 +28,9 @@ class TicketController extends Controller
             'nom' => $request['nom'],
             'telephone' => $request['telephone'],
             'ticket' => $request['ticket'],
-            'type' => $request['type']
+            'type' => $request['type'],
+            'user'=>Auth::user()->id
+
         ]);
         $ticket->save();  
         return redirect()->back()->with('success', 'inserted successfuly ! ');

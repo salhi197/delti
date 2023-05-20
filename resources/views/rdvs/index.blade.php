@@ -92,6 +92,7 @@
                                                 <th>Nom Prenom</th>
                                                 <th>Date rdv</th>
                                                 <th>Telephone</th>
+                                                <th>Action</th>
                                                 
                                             </tr>
                                         </thead>
@@ -101,7 +102,13 @@
                                                     <td>{{$rdv->nom ?? $rdv->type_ar}}</td>
                                                     <td>{{$rdv->daterdv ?? ''}}</td>
                                                     <td>{{$rdv->telephone ?? $rdv->type_en}}</td>
+                                                    <td>
+                                                    <a href="{{route('rdv.destroy',['rdv'=>$rdv->id])}}"
+                                                                    onclick="return confirm('etes vous sure  ?')" class="text-white btn btn-danger">
+                                                                    <i class="fas fa-trash"></i>
+                                                        </a>   
 
+                                                    </td>
 
                                                 </tr>
 

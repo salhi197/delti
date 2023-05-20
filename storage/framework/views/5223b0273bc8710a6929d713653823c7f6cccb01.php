@@ -90,6 +90,8 @@
                                                 <th>Nom Prenom</th>
                                                 <th>Ticket</th>
                                                 <th>Telephone</th>
+                                                <th>Action</th>
+                                                
                                                 
                                             </tr>
                                         </thead>

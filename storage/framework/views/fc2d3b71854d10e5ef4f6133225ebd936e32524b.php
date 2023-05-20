@@ -90,6 +90,7 @@
                                                 <th>Nom Prenom</th>
                                                 <th>Date rdv</th>
                                                 <th>Telephone</th>
+                                                <th>Action</th>
                                                 
                                             </tr>
                                         </thead>
@@ -99,7 +100,13 @@
                                                     <td><?php echo e($rdv->nom ?? $rdv->type_ar); ?></td>
                                                     <td><?php echo e($rdv->daterdv ?? ''); ?></td>
                                                     <td><?php echo e($rdv->telephone ?? $rdv->type_en); ?></td>
+                                                    <td>
+                                                    <a href="<?php echo e(route('rdv.destroy',['rdv'=>$rdv->id])); ?>"
+                                                                    onclick="return confirm('etes vous sure  ?')" class="text-white btn btn-danger">
+                                                                    <i class="fas fa-trash"></i>
+                                                        </a>   
 
+                                                    </td>
 
                                                 </tr>
 

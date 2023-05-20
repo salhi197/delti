@@ -17,7 +17,7 @@ class RdvController extends Controller
  
     public function index()
     {
-        $rdvs = Rdv::all();//)->get();
+        $rdvs = Rdv::where('user',Auth::user()->id)->get();
         return view('rdvs.index',compact('rdvs'));
     }
 
@@ -28,7 +28,8 @@ class RdvController extends Controller
             'nom' => $request['nom'],
             'telephone' => $request['telephone'],
             'daterdv' => $request['daterdv'],
-            'type' => $request['type']
+            'type' => $request['type'],
+            'user'=>Auth::user()->id
         ]);
         $rdv->save();  
         return redirect()->back()->with('success', 'inserted successfuly ! ');
