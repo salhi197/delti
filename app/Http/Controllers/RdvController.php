@@ -38,7 +38,7 @@ class RdvController extends Controller
     }
     public function destroy($rdv)
     {
-        $rdv = Ticket::find($rdv);
+        $rdv = Rdv::find($rdv);
         $rdv->delete();
         return redirect()->back()
             ->with('success', 'supprimé avec succé !');
