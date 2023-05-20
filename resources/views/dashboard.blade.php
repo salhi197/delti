@@ -49,7 +49,7 @@
                     <div class="row">
 
                         <div class="col-md-6">
-                            <div class="card" style="background-color: #e30613; color: #fff; box-shadow: 0px -2px 31px -6px rgba(227,6,19,0.82);
+                            <div class="card" style="background-color: #009640; color: #fff; box-shadow: 0px -2px 31px -6px rgba(227,6,19,0.82);
                                 -webkit-box-shadow: 0px -2px 31px -6px rgba(227,6,19,0.82);
                                 -moz-box-shadow: 0px -2px 31px -6px rgba(227,6,19,0.82);">
                                 <div class="card-body">
@@ -93,7 +93,33 @@
                                     </div>
                                 </div><!-- end cardbody -->
                             </div><!-- end card -->
-                        </div><!-- end col -->
+                        </div>
+                        
+                        
+                        <div class="col-md-6">
+                            <div class="card" style="background-color: #009640; color: #fff; box-shadow: 0px -2px 31px -6px rgba(0,150,64,0.82);
+                                -webkit-box-shadow: 0px -2px 31px -6px rgba(0,150,64,0.82);
+                                -moz-box-shadow: 0px -2px 31px -6px rgba(0,150,64,0.82);">
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="flex-grow-1">
+                                            <p class="text-truncate font-size-14 mb-2"></p>
+                                            <h4 class="mb-2" style="color: #fff;">Liste Rdvs</h4>
+                                            <p class="text-muted mb-0" style="color: #fff;"><span
+                                                    class=" fw-bold font-size-12 me-2" style="color: #fff;"> Liste Rendez-vous  . </p>
+                                        </div>
+                                        <div class="avatar-sm">
+                                            <a href="{{route('rdv.index')}}">
+                                            <span class="avatar-title bg-light text-success rounded-3">
+                                                <i class="fa fa-list font-size-24"  style="color: #252b3b"></i>
+                                            </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div><!-- end cardbody -->
+                            </div><!-- end card -->
+                        </div>                        
+                        <!-- end col -->
                         <div class="col-md-6">
                             <div class="card-body align-items-center d-flex justify-content-center">
                                     <!-- <div class="d-flex">

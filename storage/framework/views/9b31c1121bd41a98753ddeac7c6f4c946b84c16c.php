@@ -70,13 +70,16 @@
                             <br>
                             
                             <div class="col-md-12">
-                            <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal" style=" border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  
-                                            Ajouter Ticket</button>
-                                    <a class="btn btn-success" style=" border-style:none;" href="/histo">
-                                    <i class="fas  fas fa-list"></i> Liste Ticket
-                                        </a>
+                            <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal" style=" border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  Ajouter Ticket</button>
+                            <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal22" style=" border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  Ajouter Rdv</button>
+                                    <a class="btn btn-success" style=" border-style:none;" href="/histo"><i class="fas  fas fa-list"></i> Liste Attente</a>
 
-                            </div> 
+                            </div>
+
+
+
+                            
+                            
                         </div><!-- end col -->
                     </div>
 
@@ -114,6 +117,64 @@
                                                                             <input type="number"   name="ticket" class="form-control" id="validationCustom02" placeholder=""  required>
                                                                         </div>
                                                                     </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="validationCustom02" class="form-label">Type (Consultation / Suivie / etc ..) :  </label>
+                                                                            <input type="text"   name="type" class="form-control" id="validationCustom02" placeholder=""  required>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Fermer</button>
+                                                                        <button class="btn btn-success" data-bs-target="#secondmodal" data-bs-toggle="modal" data-bs-dismiss="modal" style=" border-style:none;"><i class="fas fa-save"></i> Sauvegarder</button>
+                                                                </div>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="modal fade" id="firstmodal22" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+                                            <div class="modal-dialog modal-dialog-centered">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title"> Ajouter Rendez-vous </h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form class="needs-validation" method="post" action="<?php echo e(route('rdv.store')); ?>" novalidate>
+                                                            <?php echo csrf_field(); ?>
+                                                                <input type="hidden" name="source" value=""/>
+                                                                <div class="row">
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="validationCustom02" class="form-label">Nom Prenom :</label>
+                                                                            <input type="text"  name="nom" class="form-control" id="validationCustom02" required>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="validationCustom02" class="form-label">Telephone : </label>
+                                                                            <input type="number"   name="telephone" class="form-control" id="validationCustom02" placeholder=""  required>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+                                                                        <div class="mb-3">
+                                                                            <label for="validationCustom02" class="form-label">Date Rdv :  </label>
+                                                                            <input type="date"   name="daterdv" class="form-control" id="validationCustom02" placeholder=""  required>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                   
+
                                                                 </div>
                                                                 <div class="modal-footer">
                                                                         <button type="button" class="btn btn-light waves-effect" data-bs-dismiss="modal">Fermer</button>

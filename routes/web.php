@@ -124,7 +124,15 @@ Route::post('/login/admin', 'Auth\LoginController@adminLogin')->name('login.admi
 Route::get('/login/client', 'Auth\LoginController@showClientLoginForm');
 Route::post('/login/client', 'Auth\LoginController@clientLogin')->name('login.client');
 
-
+Route::group(['prefix' => 'rdv','middleware' =>'lang', 'as' => 'rdv'], function () {
+    Route::get('/', ['as' => '.index', 'uses' => 'RdvController@index']);
+    Route::get('/show/create',['as'=>'.show.create', 'uses' => 'RdvController@create']);
+    Route::post('/create', ['as' => '.create', 'uses' => 'RdvController@store']);
+    Route::post('/store', ['as' => '.store', 'uses' => 'RdvController@store']);
+    Route::post('/update/{id_rdv}', ['as' => '.update', 'uses' => 'RdvController@update']);
+    Route::get('/destroy/{id_rdv}', ['as' => '.destroy', 'uses' => 'RdvController@destroy']);    
+    Route::get('/edit/{id_rdv}', ['as' => '.edit', 'uses' => 'RdvController@edit']);
+});
 
 
 Route::group(['prefix' => 'ticket','middleware' =>'lang', 'as' => 'ticket'], function () {
