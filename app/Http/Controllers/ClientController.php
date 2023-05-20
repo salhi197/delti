@@ -22,7 +22,7 @@ class ClientController extends Controller
     public function histo()
     {
         if(Auth::guard('client')->check()){
-            $tickets = Ticket::where('user',Auth::user()->id)->get();
+            $tickets = Ticket::where('user',Auth::guard('client')->user()->id)->get();
             return view('tickets.index',compact('tickets'));
         }else{
             return Redirect::route('login');

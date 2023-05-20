@@ -18,7 +18,7 @@ class RdvController extends Controller
  
     public function index()
     {
-        $rdvs = Rdv::where('user',Auth::user()->id)->get();
+        $rdvs = Rdv::where('user',Auth::guard('client')->user()->id)->get();
         return view('rdvs.index',compact('rdvs'));
     }
 

@@ -18,7 +18,7 @@ class TicketController extends Controller
  
     public function index()
     {
-        $tickets = Ticket::where('user',Auth::user()->id)->get();
+        $tickets = Ticket::where('user',Auth::guard('client')->user()->id)->get();
         return view('tickets.index',compact('tickets','source'));
     }
 
