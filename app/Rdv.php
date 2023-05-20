@@ -11,6 +11,7 @@ class Rdv extends Model
         'nom',
         'telephone',
         'ticket',
-        'daterdv'
+        'daterdv',
+        'user'
     ];
 }

@@ -8,6 +8,6 @@ class Ticket extends Model
 {
 
     protected $fillable = [
-        'nom','telephone','ticket'
+        'nom','telephone','ticket','user'
     ];
 }
