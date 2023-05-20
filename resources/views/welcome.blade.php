@@ -83,14 +83,14 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h6> Bienvenue Chez DELTTI</h6>
                 <h2>On Rend <em>Votre Vie</em>  <span>Plus</span> Simple</h2>
-                <p>Plus  besoin  de perdre du  temps , On presevre Votre temps d'attente </p>
+                <p>Plus  besoin  de perdre du  temps , On presevre Votre temps d'attente . </p>
                 <form id="search" action="{{route('client.search')}}" method="POST">
                     @csrf
                   <fieldset>
-                    <input type="address" name="code" class="email" placeholder="Code  Client ..." autocomplete="on" required>
+                    <input type="address" name="code" class="email" placeholder="Code  Attente ..." autocomplete="on" required>
                   </fieldset>
                   <fieldset>
-                    <button type="submit" class="main-button">Suivez Votre Client</button>
+                    <button type="submit" class="main-button">Suivez Votre Tour</button>
                   </fieldset>
                 </form>
               </div>
