@@ -74,7 +74,8 @@
                             <div class="col-md-12">
                             <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal" style=" border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  Ajouter Ticket</button>
                             <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal22" style=" border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  Ajouter Rdv</button>
-                                    <a class="btn btn-success" style=" border-style:none;" href="/histo"><i class="fas  fas fa-list"></i> Liste Attente</a>
+                            <a class="btn btn-success" style=" border-style:none;" href="/histo"><i class="fas  fas fa-list"></i> Liste Attente</a>
+                            <!-- <a class="btn btn-success" style=" border-style:none;" href="/rdv"><i class="fas  fas fa-list"></i> Liste Rdvs</a> -->
 
                             </div>
 
