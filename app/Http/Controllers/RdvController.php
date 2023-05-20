@@ -29,8 +29,7 @@ class RdvController extends Controller
             'nom' => $request['nom'],
             'telephone' => $request['telephone'],
             'daterdv' => $request['daterdv'],
-            'type' => $request['type'],
-            'user'=>Auth::user()->id
+            'type' =>Auth::guard('client')->user()->id
         ]);
         $rdv->save();  
         return redirect()->back()->with('success', 'inserted successfuly ! ');

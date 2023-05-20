@@ -30,7 +30,7 @@ class TicketController extends Controller
             'telephone' => $request['telephone'],
             'ticket' => $request['ticket'],
             'type' => $request['type'],
-            'user'=>Auth::user()->id
+            'user'=>Auth::guard('client')->user()->id
 
         ]);
         $ticket->save();  
