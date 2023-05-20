@@ -120,7 +120,7 @@
                                                                     <div class="col-md-6">
                                                                         <div class="mb-3">
                                                                             <label for="validationCustom02" class="form-label">Type (Consultation / Suivie / etc ..) :  </label>
-                                                                            <input type="number"   name="type" class="form-control" id="validationCustom02" placeholder=""  required>
+                                                                            <input type="text"   name="type" class="form-control" id="validationCustom02" placeholder=""  required>
                                                                         </div>
                                                                     </div>
 
