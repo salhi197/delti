@@ -83,7 +83,7 @@ https://templatemo.com/tm-562-space-dynamic
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <h6> Bienvenue Chez DELTTI</h6>
                 <h2>On Rend <em>Votre Vie</em>  <span>Plus</span> Simple</h2>
-                <p>Startup Algérienne qui propse une Solution pour les filles d'attente au niveau de différente établissement , En un click . Consulter le tour actuel sans d'avoir se déplacer . </p>
+                <p>Plus  besoin  de perdre du  temps , On presevre Votre temps d'attente </p>
                 <form id="search" action="{{route('client.search')}}" method="POST">
                     @csrf
                   <fieldset>
