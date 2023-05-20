@@ -81,16 +81,16 @@ https://templatemo.com/tm-562-space-dynamic
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Bienvenue</h6>
+                <h6> Bienvenue Chez DELTTI</h6>
                 <h2>On Rend <em>Votre Vie</em>  <span>Plus</span> Simple</h2>
-                <p>Startup Algérienne qui propse une Solution pour les filles d'attente au niveau de différente établissement , En un click . Consulter le tour actuel sans d'avoir se déplacer . </p>
+                <p>Plus  besoin  de perdre du  temps , On presevre Votre temps d'attente . </p>
                 <form id="search" action="<?php echo e(route('client.search')); ?>" method="POST">
                     <?php echo csrf_field(); ?>
                   <fieldset>
-                    <input type="address" name="code" class="email" placeholder="Code  Client ..." autocomplete="on" required>
+                    <input type="address" name="code" class="email" placeholder="Code  Attente ..." autocomplete="on" required>
                   </fieldset>
                   <fieldset>
-                    <button type="submit" class="main-button">Suivez Votre Client</button>
+                    <button type="submit" class="main-button">Suivez Votre Tour</button>
                   </fieldset>
                 </form>
               </div>

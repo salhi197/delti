@@ -27,11 +27,8 @@
     </style>
 
 <!--
-    
 TemplateMo 562 Space Dynamic
-
 https://templatemo.com/tm-562-space-dynamic
-
 -->
   </head>
 
@@ -65,11 +62,8 @@ https://templatemo.com/tm-562-space-dynamic
             <ul class="nav">
               <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
               <li class="scroll-to-section"><a href="#about">About Us</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li> 
-              <li class="scroll-to-section"><a href="#contact">Message Us</a></li> 
-              <li class="scroll-to-section"><div class="main-red-button"><a href="<?php echo e(route('login')); ?>">Espace Client</a></div></li> 
+              <li class="scroll-to-section"><a href="/login">Espace Client</a></li> 
+              <li class="scroll-to-section"><div class="main-red-button"><a href="<?php echo e(route('login')); ?>">Creer Un Compte</a></div></li> 
             </ul>        
             <a class='menu-trigger'>
                 <span>Menu</span>
@@ -89,14 +83,14 @@ https://templatemo.com/tm-562-space-dynamic
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Pour assurer le bon fonctionnement , Vous devez vous présentez avant deux (2) tickets de votre tour</h6>
-                <p>Le ticket Actuel est : </p>
+                <h6>veuillez vous présentez un tour à  l'avance pour confirmer votre présence sinon votre tour seras annuler .  </h6>
+                <p>le tour Actuel est le numéro : </p>
                 <h2 id="compteur"><?php echo e($count ?? 0); ?></h2>
                 <form id="search" action="<?php echo e(route('client.search')); ?>" method="POST">
                     <input type="hidden" id="clientid" value="<?php echo e($client->id); ?>"  class="form-control" >
                     <?php echo csrf_field(); ?>
                     <fieldset>
-                        <input type="address" name="code" class="email" placeholder="Code  Client ..." autocomplete="on" required>
+                        <input type="address" name="code" class="email" placeholder="Numero ticket ..." autocomplete="on" required>
                     </fieldset>
                     <fieldset>
                         <button type="submit" class="main-button">Créer Une Notification</button>
@@ -133,7 +127,7 @@ https://templatemo.com/tm-562-space-dynamic
                     <img src="<?php echo e(asset('deltti/assets/images/service-icon-01.png')); ?>" alt="reporting">
                   </div>
                   <div class="right-text">
-                    <h4>Data Analysis</h4>
+                    <h4>Rapidite</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
@@ -144,7 +138,7 @@ https://templatemo.com/tm-562-space-dynamic
                     <img src="<?php echo e(asset('deltti/assets/images/service-icon-02.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>Data Reporting</h4>
+                    <h4>Fluidite</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
@@ -155,7 +149,7 @@ https://templatemo.com/tm-562-space-dynamic
                     <img src="<?php echo e(asset('deltti/assets/images/service-icon-03.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>Web Analytics</h4>
+                    <h4>Précision </h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
@@ -166,7 +160,7 @@ https://templatemo.com/tm-562-space-dynamic
                     <img src="<?php echo e(asset('deltti/assets/images/service-icon-04.png')); ?>" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>SEO Suggestions</h4>
+                    <h4>--</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
