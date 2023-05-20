@@ -75,7 +75,7 @@
                             <button type="button" class="btn btn-success waves-effect waves-light" data-bs-toggle="modal" data-bs-target="#firstmodal" style=" border-style:none;">  <i class="fas  fas fa-plus-circle"></i>  
                                             Ajouter Ticket</button>
                                     <a class="btn btn-success" style=" border-style:none;" href="/histo">
-                                    <i class="fas  fas fa-list"></i> Liste Ticket
+                                    <i class="fas  fas fa-list"></i> Liste Attente
                                         </a>
 
                             </div> 
