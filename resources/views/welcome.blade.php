@@ -123,7 +123,7 @@ https://templatemo.com/tm-562-space-dynamic
                     <img src="{{asset('deltti/assets/images/service-icon-01.png')}}" alt="reporting">
                   </div>
                   <div class="right-text">
-                    <h4>Data Analysis</h4>
+                  <h4>Rapidite</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ https://templatemo.com/tm-562-space-dynamic
                     <img src="{{asset('deltti/assets/images/service-icon-02.png')}}" alt="">
                   </div>
                   <div class="right-text">
-                    <h4>Data Reporting</h4>
+                  <h4>Fluidite</h4>
                     <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
                   </div>
                 </div>
