@@ -27,11 +27,8 @@
     </style>
 
 <!--
-    
 TemplateMo 562 Space Dynamic
-
 https://templatemo.com/tm-562-space-dynamic
-
 -->
   </head>
 
@@ -89,8 +86,8 @@ https://templatemo.com/tm-562-space-dynamic
           <div class="row">
             <div class="col-lg-6 align-self-center">
               <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
-                <h6>Pour assurer le bon fonctionnement , Vous devez vous présentez avant deux (2) tickets de votre tour</h6>
-                <p>Le ticket Actuel est : </p>
+                <h6>veuillez vous présentez un tour à  l'avance pour confirmer votre présence sinon votre tour seras annuler .  </h6>
+                <p>le tour Actuel est le numéro : </p>
                 <h2 id="compteur">{{$count ?? 0}}</h2>
                 <form id="search" action="{{route('client.search')}}" method="POST">
                     <input type="hidden" id="clientid" value="{{$client->id}}"  class="form-control" >
